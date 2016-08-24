@@ -13,7 +13,7 @@ public class FixDebugThree1
     {
       final double RATE = 0.15;
       double tip;
-      tip = bill + RATE;
+      tip = bill * RATE;
       System.out.println("The tip should be at least " + tip);
     }
 }
