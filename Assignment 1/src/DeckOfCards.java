@@ -1,7 +1,7 @@
 public class DeckOfCards {
     //creating the array of cards for the deck
     public static void main(String[] args) {
-            String[] suits = {
+            String[] SUITS = {
                     "Clubs", "Diamonds", "Hearts", "Spades"
             };
 
