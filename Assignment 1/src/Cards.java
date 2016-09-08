@@ -64,21 +64,5 @@ public class Cards {
         JFrame window = new JFrame("Mineral Supertrumps");
         window.setSize(900,600);
 
-        //create a JPanel
-        JPanel contentPane = new JPanel(new BorderLayout());
-
-        //create a JLabel
-        JLabel cardLabel = new JLabel(new ImageIcon(Quartz.GetCardImage()));
-        cardLabel.setSize(100,150);
-
-        JLabel cardLabel2 = new JLabel(new ImageIcon(Plagioclase.GetCardImage()));
-        cardLabel2.setSize(100,150);
-
-        contentPane.add(cardLabel);
-        contentPane.add(cardLabel2);
-        window.add(contentPane);
-
-        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        window.setVisible(true);
     } //main() ends here
 } //class ends here
