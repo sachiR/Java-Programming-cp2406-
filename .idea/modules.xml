@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Assignment 1/Assignment 1.iml" filepath="$PROJECT_DIR$/Assignment 1/Assignment 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch1/Ch1.iml" filepath="$PROJECT_DIR$/Ch1/Ch1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch10/Ch10.iml" filepath="$PROJECT_DIR$/Ch10/Ch10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch11/Ch11.iml" filepath="$PROJECT_DIR$/Ch11/Ch11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch12/Ch12.iml" filepath="$PROJECT_DIR$/Ch12/Ch12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch2/Ch2.iml" filepath="$PROJECT_DIR$/Ch2/Ch2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch3/Ch3.iml" filepath="$PROJECT_DIR$/Ch3/Ch3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch4/Ch4.iml" filepath="$PROJECT_DIR$/Ch4/Ch4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch5/Ch5.iml" filepath="$PROJECT_DIR$/Ch5/Ch5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch6/Ch6.iml" filepath="$PROJECT_DIR$/Ch6/Ch6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch7/Ch7.iml" filepath="$PROJECT_DIR$/Ch7/Ch7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch8/Ch8.iml" filepath="$PROJECT_DIR$/Ch8/Ch8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch12/Debug.iml" filepath="$PROJECT_DIR$/Ch12/Debug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch6/Debug/Debug1.iml" filepath="$PROJECT_DIR$/Ch6/Debug/Debug1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch1/Debug/Debug2.iml" filepath="$PROJECT_DIR$/Ch1/Debug/Debug2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch5/Debug/Debug3.iml" filepath="$PROJECT_DIR$/Ch5/Debug/Debug3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch8/Debug/Debug4.iml" filepath="$PROJECT_DIR$/Ch8/Debug/Debug4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch7/Debug/Debug5.iml" filepath="$PROJECT_DIR$/Ch7/Debug/Debug5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch2/Debug/Debug6.iml" filepath="$PROJECT_DIR$/Ch2/Debug/Debug6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch10/Debug/Debug7.iml" filepath="$PROJECT_DIR$/Ch10/Debug/Debug7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch3/Debug/Debug8.iml" filepath="$PROJECT_DIR$/Ch3/Debug/Debug8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch11/Exercises/Exercises.iml" filepath="$PROJECT_DIR$/Ch11/Exercises/Exercises.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch12/FixDebug.iml" filepath="$PROJECT_DIR$/Ch12/FixDebug.iml" />
+    </modules>
+  </component>
+</project>
