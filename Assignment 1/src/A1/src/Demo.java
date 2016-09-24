@@ -21,9 +21,10 @@ public class Demo {
 
     private static void startNewGame() {
         int numPlayers = getNumPlayers();
-       // selectDealer();
+        STGame game = new STGame(numPlayers);
+        game.selectDealer();
+        System.out.println(game.selectDealer());
         //dealCards();
-        System.out.println(numPlayers);
     }
 
     private static int getNumPlayers() {
@@ -76,6 +77,6 @@ public class Demo {
     }
 
     private static  void showWelcome(){
-         System.out.println("Welcome to Mineral Trumps"); // shows welcome message
+        System.out.println("Welcome to Mineral Trumps"); // shows welcome message
     }
 }
