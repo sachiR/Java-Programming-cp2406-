@@ -6,7 +6,17 @@ public class Demo {
         showWelcome();
         showMenu();
         int opt = getUserMenuChoice();
-        System.out.println(opt);
+        switch (opt){
+            case 1:
+                System.out.println("start game");
+                break;
+            case 2:
+                System.out.println("how to play");
+                break;
+            case 3:
+                System.out.println("Come Again..");
+                System.exit(opt);
+        }
     }
 
     private static int getUserMenuChoice() {
