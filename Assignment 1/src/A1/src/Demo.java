@@ -12,12 +12,30 @@ public class Demo {
                 break;
             case 2:
                 howToPlay();
+                repeatMain();
                 break;
             case 3:
                 System.out.println("Thank you for playing. Come Again..");
                 System.exit(opt); //exit the game
         }
     }
+
+    private static void repeatMain() {
+        showMenu();
+        int opt = getUserMenuChoice();
+        switch (opt){ //options in the menu
+            case 1:
+                startNewGame();
+                break;
+            case 2:
+                howToPlay();
+                main();
+                break;
+            case 3:
+                System.out.println("Thank you for playing. Come Again..");
+                System.exit(opt); //exit the game
+    }}
+
 
     private static void howToPlay() {
         System.out.println("About Mineral Super-trumps: \nMineral Super-trumps is a game designed to help players learn about the properties and uses of common rock forming minerals." +
@@ -40,14 +58,14 @@ public class Demo {
                 "NOTE: If a Player throws The Geophysicist card with the Magnetite card, they win the hand.\n " +
                 "6.The game continues players taking turns until all but one player has passed. The last player then gets to lead out the next round and chooses the trump" +
                 "category to be played.\n " +
-                "7.The winner of the game is the first player to lose all of their cards. The game continue until all but one player has lost their cards. ");
+                "7.The winner of the game is the first player to lose all of their cards. The game continue until all but one player has lost their cards.\n\n ");
     }
 
     private static void startNewGame() {
         int numPlayers = getNumPlayers();
         STGame game = new STGame(numPlayers); //start game
         game.selectDealer(); //select the dealer randomly
-        //dealCards();
+        game.dealRandomCards();
     }
 
     private static int getNumPlayers() {
