@@ -1,8 +1,8 @@
 import java.util.Random;
 
 public class STGame {
-
     private int numPlayers;
+    private int randomDealer;
 
     public STGame(int numPlayers) {
         this.numPlayers = numPlayers ;
