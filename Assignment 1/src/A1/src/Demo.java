@@ -8,7 +8,7 @@ public class Demo {
         int opt = getUserMenuChoice();
         switch (opt){
             case 1:
-                System.out.println("start game");
+                startNewGame();
                 break;
             case 2:
                 System.out.println("how to play");
@@ -18,6 +18,27 @@ public class Demo {
                 System.exit(opt);
         }
     }
+
+    private static void startNewGame() {
+        int numPlayers = getNumPlayers();
+       // selectDealer();
+        //dealCards();
+        System.out.println(numPlayers);
+    }
+
+    private static int getNumPlayers() {
+        Scanner reader = new Scanner(System.in);
+        System.out.println("Enter the number of players... (3 to 5)");
+        int line = reader.nextInt();
+        if (line < 3 || line > 5){
+            do {System.out.println("Invalid choice please select again between 3 to 5");
+                line = reader.nextInt();}
+            while (line < 1 || line > 5 );
+        } else {
+            return line;
+        }
+        return line;
+        }
 
     private static int getUserMenuChoice() {
         Scanner reader = new Scanner(System.in); // Reading from System.in
@@ -50,11 +71,11 @@ public class Demo {
 
     private static void showMenu() {
         System.out.println("Press 1 to start game");
-        System.out.println("Press 2 to see how to play the game");
+        System.out.println("Press 2 to how to play the game");
         System.out.println("Press 3 to quit game");
     }
 
     private static  void showWelcome(){
-        System.out.println("Welcome to Mineral Trumps"); // shows welcome message
+         System.out.println("Welcome to Mineral Trumps"); // shows welcome message
     }
 }
