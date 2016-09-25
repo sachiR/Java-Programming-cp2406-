@@ -2,8 +2,11 @@ import java.util.Random;
 
 public class STGame {
 
-    private int numPlayers;
+    private static final int NUM_CARDS_TO_DEAL = 8;
     private int randomDealer;
+    private int numPlayers;
+    private STPlayer[] players;
+    private STDeck deck;
 
     public STGame(int numPlayers) {
         this.numPlayers = numPlayers ;
@@ -14,7 +17,11 @@ public class STGame {
         return rand.nextInt((5 - 3)+1)+3;
     }
 
-
-    public void dealRandomCards() {
+    public void dealRandomCardsToEachPlayer() {
+        STPlayer[] players = new STPlayer[numPlayers];
+        for (STPlayer player : players) {
+            STCard card = deck.dealCards(NUM_CARDS_TO_DEAL);
+            player.setCards();
+        }
     }
 }
