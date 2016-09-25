@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Random;
 
 public class STGame {
@@ -20,7 +21,7 @@ public class STGame {
     public void dealRandomCardsToEachPlayer() {
         STPlayer[] players = new STPlayer[numPlayers];
         for (STPlayer player : players) {
-            STCard card = deck.dealCards(NUM_CARDS_TO_DEAL);
+            ArrayList<STCard> card = deck.dealCards(NUM_CARDS_TO_DEAL);
             player.setCards();
         }
     }
