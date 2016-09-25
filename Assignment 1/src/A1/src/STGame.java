@@ -11,18 +11,23 @@ public class STGame {
 
     public STGame(int numPlayers) {
         this.numPlayers = numPlayers ;
+        deck = new STDeck();
     }
 
     public int selectDealer() {
         Random rand = new Random();//randomly selecting a dealer
-        return rand.nextInt((5 - 3)+1)+3;
+        randomDealer = rand.nextInt((5 - 3)+1)+3;
+        return randomDealer;
     }
 
     public void dealRandomCardsToEachPlayer() {
         STPlayer[] players = new STPlayer[numPlayers];
+        for(int i = 0; 5 < numPlayers; i++){
+            players[i] = new STPlayer("player=" +i);
+        }
         for (STPlayer player : players) {
-            ArrayList<STCard> card = deck.dealCards(NUM_CARDS_TO_DEAL);
-            player.setCards();
+            ArrayList<STCard> cards = deck.dealCards(NUM_CARDS_TO_DEAL);
+            player.setCards(cards);
         }
     }
 }

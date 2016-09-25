@@ -8,7 +8,7 @@ public class Demo {
         int opt = getUserMenuChoice();
         switch (opt){ //options in the menu
             case 1:
-                startNewGame();
+                 startNewGame();
                 break;
             case 2:
                 howToPlay();
@@ -27,7 +27,7 @@ public class Demo {
         game.dealRandomCardsToEachPlayer();
     }
 
-    static int getNumPlayers() {
+    private static int getNumPlayers() {
         Scanner reader = new Scanner(System.in); // Reading from System.in
         System.out.println("Enter the number of players... (3 to 5)");
         int line = reader.nextInt(); //read the int in new line

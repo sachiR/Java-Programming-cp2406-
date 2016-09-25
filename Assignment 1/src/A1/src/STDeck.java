@@ -1,10 +1,10 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 public class STDeck {
     private static final int NUM_OF_DECK = 60;
     private ArrayList<STCard> cards;
 
-    //todo: List of cards
 
     public STDeck(){
         cards = new ArrayList<STCard>(NUM_OF_DECK);
@@ -15,6 +15,14 @@ public class STDeck {
     }
 
     public ArrayList<STCard> dealCards(int numCardsToDeal) {
-        return null;
+        ArrayList<STCard> ret= new ArrayList<STCard>();
+        int nCards = 0;
+        for(int i = 0; 1 < nCards; i++){
+            int id = new Random().nextInt(cards.size());
+            STCard card =cards.remove(id);
+            ret.add(card);
+            System.out.println("\n card =" + card );
+        }
+        return ret;
     }
 }
