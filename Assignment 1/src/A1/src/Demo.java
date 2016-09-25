@@ -46,25 +46,20 @@ public class Demo {
         String line = reader.nextLine (); // Scans the next token of the input as an int.
         int n;
         while (true) {//check if it is true and continue while it is
-            if (line.length () == 1) { // check the line length
+            if (line.length () == 1) { // check the line lengt
                 try {
-                    n = Integer.parseInt (line); //change n to a int
-                    break;
+                    n = Integer.parseInt(line); //change n to a int/
+                    if (n <= 0 || n > 3) {
+                        System.out.println("Invalid choice please select again");
+                    } else {
+                        break;
+                    }
                 }
                 catch (NumberFormatException e) { // an exception is thrown
-                    // do nothing.
+                    System.out.println(e.getMessage() + " Invalid choice please select again");// print an error message
                 }
             }
-            System.out.println ("Invalid choice please select again"); // print an error message
             line = reader.nextLine (); // read the next line
-        }
-
-        if (n < 1 || n > 3){ // if statement to check if the input is between 1 and 3
-            do {System.out.println("Invalid choice please select again"); // shows an error message
-                n = reader.nextInt();} // read Int in the next line
-            while (n < 1 || n > 3 ); // check if the number is between 1 and 3 until it is this continues
-        } else {
-            return n;
         }
         return n;
     }

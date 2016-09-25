@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class STGame {
 
-    private static final int NUM_CARDS_TO_DEAL = 30;
+    private static final int NUM_CARDS_TO_DEAL = 8;
     private int randomDealer;
     private int numPlayers;
     private STPlayer[] players;

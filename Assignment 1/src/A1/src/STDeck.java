@@ -15,11 +15,16 @@ public class STDeck {
 
     public ArrayList<STCard> dealCards(int nCards) {
         ArrayList<STCard> ret = new ArrayList<STCard>();
+        Random rand = new Random();
         for(int i = 0; i < nCards; i++) {
-              int id = new Random().nextInt(cards.size());
-              STCard card = cards.remove(id);
-              ret.add(card);
-              System.out.println("\n card = " + card);
+            if (cards.size() > 0) {
+                int idx = rand.nextInt(cards.size());
+                STCard card = cards.remove(idx);
+                ret.add(card);
+                System.out.println("\n card = " + card);
+            } else {
+                return null;
+            }
         }
         return ret;
     }
