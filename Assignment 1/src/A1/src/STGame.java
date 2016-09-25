@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class STGame {
 
-    private static final int NUM_CARDS_TO_DEAL = 8;
+    private static final int NUM_CARDS_TO_DEAL = 30;
     private int randomDealer;
     private int numPlayers;
     private STPlayer[] players;
@@ -22,7 +22,7 @@ public class STGame {
 
     public void dealRandomCardsToEachPlayer() {
         STPlayer[] players = new STPlayer[numPlayers];
-        for(int i = 0; 5 < numPlayers; i++){
+        for(int i = 0; i < numPlayers; i++){
             players[i] = new STPlayer("player=" +i);
         }
         for (STPlayer player : players) {

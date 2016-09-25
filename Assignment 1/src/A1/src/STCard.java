@@ -5,10 +5,6 @@ public class STCard {
         this.id = id;
     }
 
-    public STCard() {
-
-    }
-
     public String toString(){
         return "id=" + id;
     }

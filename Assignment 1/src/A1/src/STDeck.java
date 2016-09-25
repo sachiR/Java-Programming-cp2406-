@@ -2,26 +2,24 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class STDeck {
-    private static final int NUM_OF_DECK = 60;
+    private static final int NUM_OF_DECK = 5;
     private ArrayList<STCard> cards;
 
 
     public STDeck(){
-        cards = new ArrayList<STCard>(NUM_OF_DECK);
-        for (int i = 0; i < cards.size(); i++) {
-            cards.add(new STCard());
-            //google how to create random array of integer
+        cards = new ArrayList<STCard>();
+        for (int i = 0; i < NUM_OF_DECK; i++) {
+            cards.add(new STCard(i));
         }
     }
 
-    public ArrayList<STCard> dealCards(int numCardsToDeal) {
-        ArrayList<STCard> ret= new ArrayList<STCard>();
-        int nCards = 0;
-        for(int i = 0; 1 < nCards; i++){
-            int id = new Random().nextInt(cards.size());
-            STCard card =cards.remove(id);
-            ret.add(card);
-            System.out.println("\n card =" + card );
+    public ArrayList<STCard> dealCards(int nCards) {
+        ArrayList<STCard> ret = new ArrayList<STCard>();
+        for(int i = 0; i < nCards; i++) {
+              int id = new Random().nextInt(cards.size());
+              STCard card = cards.remove(id);
+              ret.add(card);
+              System.out.println("\n card = " + card);
         }
         return ret;
     }
