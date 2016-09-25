@@ -29,7 +29,7 @@ public class Demo {
                 break;
             case 2:
                 howToPlay();
-                main();
+                repeatMain();
                 break;
             case 3:
                 System.out.println("Thank you for playing. Come Again..");
