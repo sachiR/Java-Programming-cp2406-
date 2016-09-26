@@ -24,8 +24,8 @@
       <file leaf-file-name="demo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/A1/src/demo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1071#1072#0" expanded="true" />
@@ -35,34 +35,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="STGame.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="STGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/A1/src/STGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+            <state relative-caret-position="663">
+              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#965#966#0" expanded="true" />
                 <element signature="e#998#999#0" expanded="true" />
-                <element signature="e#1036#1037#0" expanded="true" />
                 <element signature="e#1080#1081#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="STPlayer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="STDeck.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/A1/src/STDeck.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="STCard.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/A1/src/STCard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="STPlayer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/A1/src/STPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="306">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="e#157#158#0" expanded="true" />
                 <element signature="e#197#198#0" expanded="true" />
                 <element signature="e#251#252#0" expanded="true" />
                 <element signature="e#285#286#0" expanded="true" />
                 <element signature="e#315#316#0" expanded="true" />
-                <element signature="e#360#361#0" expanded="true" />
+                <element signature="e#382#383#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,8 +119,8 @@
         <option value="$PROJECT_DIR$/A1/src/Demo.java" />
         <option value="$PROJECT_DIR$/A1/src/demo.java" />
         <option value="$PROJECT_DIR$/A1/src/STCard.java" />
-        <option value="$PROJECT_DIR$/A1/src/STPlayer.java" />
         <option value="$PROJECT_DIR$/A1/src/STGame.java" />
+        <option value="$PROJECT_DIR$/A1/src/STPlayer.java" />
       </list>
     </option>
   </component>
@@ -543,7 +564,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="19" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -560,7 +581,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#965#966#0" expanded="true" />
             <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1036#1037#0" expanded="true" />
             <element signature="e#1080#1081#0" expanded="true" />
           </folding>
         </state>
@@ -580,12 +600,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding>
-            <element signature="e#68#69#0" expanded="true" />
-            <element signature="e#96#97#0" expanded="true" />
-            <element signature="e#127#128#0" expanded="true" />
-            <element signature="e#161#162#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -599,7 +614,7 @@
             <element signature="e#251#252#0" expanded="true" />
             <element signature="e#285#286#0" expanded="true" />
             <element signature="e#315#316#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -624,7 +639,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#965#966#0" expanded="true" />
             <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1036#1037#0" expanded="true" />
             <element signature="e#1080#1081#0" expanded="true" />
           </folding>
         </state>
@@ -644,12 +658,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#68#69#0" expanded="true" />
-            <element signature="e#96#97#0" expanded="true" />
-            <element signature="e#127#128#0" expanded="true" />
-            <element signature="e#161#162#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -663,7 +672,7 @@
             <element signature="e#251#252#0" expanded="true" />
             <element signature="e#285#286#0" expanded="true" />
             <element signature="e#315#316#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -688,7 +697,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#965#966#0" expanded="true" />
             <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1036#1037#0" expanded="true" />
             <element signature="e#1080#1081#0" expanded="true" />
           </folding>
         </state>
@@ -708,12 +716,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#68#69#0" expanded="true" />
-            <element signature="e#96#97#0" expanded="true" />
-            <element signature="e#127#128#0" expanded="true" />
-            <element signature="e#161#162#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -727,7 +730,7 @@
             <element signature="e#251#252#0" expanded="true" />
             <element signature="e#285#286#0" expanded="true" />
             <element signature="e#315#316#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -752,7 +755,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#965#966#0" expanded="true" />
             <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1036#1037#0" expanded="true" />
             <element signature="e#1080#1081#0" expanded="true" />
           </folding>
         </state>
@@ -946,33 +948,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/A1/src/STCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding>
-            <element signature="e#68#69#0" expanded="true" />
-            <element signature="e#96#97#0" expanded="true" />
-            <element signature="e#127#128#0" expanded="true" />
-            <element signature="e#161#162#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/A1/src/STDeck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/A1/src/STCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A1/src/STGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#965#966#0" expanded="true" />
+            <element signature="e#998#999#0" expanded="true" />
+            <element signature="e#1080#1081#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/A1/src/demo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="306">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1071#1072#0" expanded="true" />
@@ -983,29 +993,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/A1/src/STPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="306">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="e#157#158#0" expanded="true" />
             <element signature="e#197#198#0" expanded="true" />
             <element signature="e#251#252#0" expanded="true" />
             <element signature="e#285#286#0" expanded="true" />
             <element signature="e#315#316#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/A1/src/STGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#965#966#0" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1036#1037#0" expanded="true" />
-            <element signature="e#1080#1081#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
           </folding>
         </state>
       </provider>
