@@ -6,7 +6,6 @@ public class STCard {
     }
 
     public String toString(){
-
         return "id =" + id;
     }
 }

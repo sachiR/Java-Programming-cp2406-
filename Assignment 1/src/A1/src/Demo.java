@@ -1,6 +1,8 @@
+import com.sun.org.apache.xpath.internal.SourceTree;
+
 import java.util.Scanner;
 
-public class Demo {
+public class demo {
 
     public static void main(String[] args) {
         showWelcome();
@@ -25,6 +27,14 @@ public class Demo {
         STGame game = new STGame(numPlayers); //start game
         game.selectDealer(); //select the dealer randomly
         game.dealRandomCardsToEachPlayer();
+        game.selectYouAsPlayer();
+        STPlayer humPlayer = game.getHumPlayer();
+        showPlayer(humPlayer);
+        //game.showHumPlayerCards[];
+    }
+
+    private static void showPlayer(STPlayer humPlayer) {
+        System.out.println("humanPlayer =" + humPlayer);
     }
 
     private static int getNumPlayers() {

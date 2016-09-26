@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class STDeck {
-    private static final int NUM_OF_DECK = 5;
+    private static final int NUM_OF_DECK = 60;
     private ArrayList<STCard> cards;
 
 
@@ -21,7 +21,7 @@ public class STDeck {
                 int idx = rand.nextInt(cards.size());
                 STCard card = cards.remove(idx);
                 ret.add(card);
-                System.out.println("\n card = " + card);
+                System.out.println("card = " + card);
             } else {
                 return null;
             }
