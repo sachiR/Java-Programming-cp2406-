@@ -18,6 +18,7 @@ public class STGame {
     public int selectDealer() {
         Random rand = new Random();//randomly selecting a dealer
         randomDealer = rand.nextInt((5 - 3)+1)+3;
+        System.out.println("random dealer = " + randomDealer);
         return randomDealer;
     }
 
@@ -38,5 +39,18 @@ public class STGame {
 
     public STPlayer getHumPlayer() {
         return players[yourPlayerId];
+    }
+
+    public void playTheGame() {
+        boolean gameIsOn = true;
+        while (gameIsOn){
+            //for (int i = 0; i < players.length; i++) {
+            //}
+            //showTurnPlayer();
+
+        }
+    }
+
+    private void showTurnPlayer() {
     }
 }

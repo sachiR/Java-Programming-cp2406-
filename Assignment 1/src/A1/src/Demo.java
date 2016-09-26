@@ -26,11 +26,11 @@ public class demo {
         int numPlayers = getNumPlayers();
         STGame game = new STGame(numPlayers); //start game
         game.selectDealer(); //select the dealer randomly
-        game.dealRandomCardsToEachPlayer();
-        game.selectYouAsPlayer();
-        STPlayer humPlayer = game.getHumPlayer();
-        showPlayer(humPlayer);
-        //game.showHumPlayerCards[];
+        game.dealRandomCardsToEachPlayer(); // randomly deal 8 cards to each player
+        game.selectYouAsPlayer(); // show user player id
+        STPlayer humPlayer = game.getHumPlayer(); // how user player id
+        showPlayer(humPlayer); // print user id
+        game.playTheGame();
     }
 
     private static void showPlayer(STPlayer humPlayer) {
