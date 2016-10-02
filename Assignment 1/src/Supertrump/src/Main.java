@@ -38,6 +38,25 @@ public class Main {
     }
 
     private static void startNewGame() {
+        int numOfPlayers = getNumOfPlayers();
+        STDeck deck = new STDeck();
+        STGame game = new STGame(numOfPlayers,deck);
+        deck.ShuffleTheDeck();
+        game.dealCardsToEachPlayer();
+    }
+
+    private static int getNumOfPlayers() {
+        Scanner reader = new Scanner(System.in); // Reading from System.in
+        System.out.println("Enter the number of players... (3 to 5)");
+        int line = reader.nextInt(); //read the int in new line
+        if (line < 3 || line > 5){ //check if the dealer entered is between 3 to 5
+            do {System.out.println("Invalid choice please select again between 3 to 5"); //shows error message
+                line = reader.nextInt();} //read the int in new line
+            while (line < 3 || line > 5 );//check if the dealer entered is between 3 to 5 and continue while it is not
+        } else {
+            return line;
+        }
+        return line;
     }
 
     private static void howToPlay() {

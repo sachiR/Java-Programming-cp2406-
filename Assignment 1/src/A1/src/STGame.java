@@ -19,6 +19,7 @@ public class STGame {
         Random rand = new Random();//randomly selecting a dealer
         randomDealer = rand.nextInt((5 - 3)+1)+3;
         System.out.println("random dealer = " + randomDealer);
+        System.out.println("");
         return randomDealer;
     }
 
@@ -42,13 +43,6 @@ public class STGame {
     }
 
     public void playTheGame() {
-        boolean gameIsOn = true;
-        while (gameIsOn){
-            //for (int i = 0; i < players.length; i++) {
-            //}
-            //showTurnPlayer();
-
-        }
     }
 
     private void showTurnPlayer() {

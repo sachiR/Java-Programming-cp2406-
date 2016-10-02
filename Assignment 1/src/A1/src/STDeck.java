@@ -2,14 +2,14 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class STDeck {
-    private static final int NUM_OF_DECK = 60;
+    private static final int NUM_OF_DECK = 54;
     private ArrayList<STCard> cards;
 
 
     public STDeck(){
         cards = new ArrayList<STCard>();
         for (int i = 0; i < NUM_OF_DECK; i++) {
-            cards.add(new STCard(i));
+            cards.add(new STCard(i,"Quataz"));
         }
     }
 

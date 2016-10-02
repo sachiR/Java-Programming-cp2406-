@@ -80,9 +80,10 @@ public class demo {
         System.out.println("Press 3 to quit game");
     }
 
-    private static  void showWelcomeAndGetName(){
+    private static String showWelcomeAndGetName(){
         System.out.println("Welcome to Mineral Super Trumps"); // shows welcome message to the user
-	Scanner reader = new Scanner(System.in); // Reading from System.in
+        System.out.println("Enter your name...");
+        Scanner reader = new Scanner(System.in); // Reading from System.in
         return reader.next();    
 }
 
