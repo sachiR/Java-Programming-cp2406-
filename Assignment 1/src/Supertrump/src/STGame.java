@@ -26,7 +26,7 @@ public class STGame {
         this.dealerID = rnd.nextInt(numPlayers);
         nextPlayerID = this.dealerID;
         changeToNextPlayerID();
-        System.out.println("Random dealer is "+nextPlayerID);
+        System.out.println("\nRandom dealer is "+nextPlayerID);
     }
 
     private void changeToNextPlayerID() {
