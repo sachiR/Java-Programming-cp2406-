@@ -14,7 +14,7 @@ public class STPlayer {
         this.cards = cards;
     }
     public String toString(){
-        return "PlayerId = " + playerId +"\nCards:" + cards;
+        return "Player ID = " + playerId +"\nCards:" + cards;
     }
 
 }

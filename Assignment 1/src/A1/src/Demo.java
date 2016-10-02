@@ -34,7 +34,7 @@ public class demo {
     }
 
     private static void showPlayer(STPlayer humPlayer) {
-        System.out.println("humanPlayer =" + humPlayer);
+        System.out.println("\nYou're " + humPlayer);
     }
 
     private static int getNumPlayers() {
