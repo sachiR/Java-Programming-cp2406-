@@ -2,6 +2,8 @@ public class STCard {
     private int id;
     private String title;
     private String type;
+    private String subtitle;
+
 
     public STCard(int id,String title,String type){
         this.id = id;
@@ -9,7 +11,14 @@ public class STCard {
         this.type = type;
     }
 
+    public STCard(int id, String title, String type, String subtitle) {
+        this.id = id;
+        this.title = title;
+        this.type = type;
+        this.subtitle = subtitle;
+    }
+
     public String toString() {
-        return "\nid ="+id+" title = "+title+ " type = " + type;
+        return "\nid="+id+", Title="+title+", Card Type="+type+", Subtitle="+subtitle;
     }
 }

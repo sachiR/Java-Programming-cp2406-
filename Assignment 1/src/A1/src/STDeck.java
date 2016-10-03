@@ -68,12 +68,13 @@ public class STDeck {
             cards.add(new STCard(i,"Goethite","P"));
         }
         for (int i = 0; i < NUMBER_OF_TRUMP_CARDS; i++) {
-            cards.add(new STCard(i,"The Miner","T"));
-            cards.add(new STCard(i,"The Petrologist","T"));
-            cards.add(new STCard(i,"The Gemmologist","T"));
-            cards.add(new STCard(i,"The Mineralogist","T"));
-            cards.add(new STCard(i,"The Geophysicist","T"));
-            cards.add(new STCard(i,"The Geologist","T"));
+            cards.add(new STCard(i,"The Miner","T","Economic value"));
+            cards.add(new STCard(i,"The Petrologist","T","Crustal abundance"));
+            cards.add(new STCard(i,"The Gemmologist","T","Hardness"));
+            cards.add(new STCard(i,"The Mineralogist","T","Cleavage"));
+            cards.add(new STCard(i,"The Geophysicist","T","Specific gravity"));
+            cards.add(new STCard(i,"The Geologist","T","Change to trumps category of your choice"));
+
         }
     }
 
