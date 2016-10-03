@@ -54,8 +54,8 @@
       <file leaf-file-name="STDeck.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/STDeck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="1013" column="48" selection-start-line="1013" selection-start-column="48" selection-end-line="1013" selection-end-column="48" />
+            <state relative-caret-position="129">
+              <caret line="1349" column="8" selection-start-line="1349" selection-start-column="8" selection-end-line="1349" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#ShuffleTheDeck#0;class#STDeck#0" expanded="false" />
@@ -87,6 +87,18 @@
                 <element signature="method#CardProperties25#0;class#STDeck#0" expanded="false" />
                 <element signature="method#CardProperties26#0;class#STDeck#0" expanded="false" />
                 <element signature="method#CardProperties27#0;class#STDeck#0" expanded="false" />
+                <element signature="method#CardProperties28#0;class#STDeck#0" expanded="false" />
+                <element signature="method#CardProperties29#0;class#STDeck#0" expanded="false" />
+                <element signature="method#CardProperties30#0;class#STDeck#0" expanded="false" />
+                <element signature="method#CardProperties31#0;class#STDeck#0" expanded="false" />
+                <element signature="method#CardProperties32#0;class#STDeck#0" expanded="false" />
+                <element signature="method#CardProperties33#0;class#STDeck#0" expanded="false" />
+                <element signature="method#CardProperties34#0;class#STDeck#0" expanded="false" />
+                <element signature="method#CardProperties35#0;class#STDeck#0" expanded="false" />
+                <element signature="method#CardProperties36#0;class#STDeck#0" expanded="false" />
+                <element signature="method#CardProperties37#0;class#STDeck#0" expanded="false" />
+                <element signature="method#CardProperties38#0;class#STDeck#0" expanded="false" />
+                <element signature="method#CardProperties39#0;class#STDeck#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -504,7 +516,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -571,6 +583,18 @@
             <element signature="method#CardProperties25#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties26#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties27#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties28#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties29#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties30#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties31#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties32#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties33#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties34#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties35#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties36#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties37#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties38#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties39#0;class#STDeck#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -681,6 +705,18 @@
             <element signature="method#CardProperties25#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties26#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties27#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties28#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties29#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties30#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties31#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties32#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties33#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties34#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties35#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties36#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties37#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties38#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties39#0;class#STDeck#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -749,8 +785,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/STDeck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="1013" column="48" selection-start-line="1013" selection-start-column="48" selection-end-line="1013" selection-end-column="48" />
+        <state relative-caret-position="129">
+          <caret line="1349" column="8" selection-start-line="1349" selection-start-column="8" selection-end-line="1349" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#ShuffleTheDeck#0;class#STDeck#0" expanded="false" />
@@ -782,6 +818,18 @@
             <element signature="method#CardProperties25#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties26#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties27#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties28#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties29#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties30#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties31#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties32#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties33#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties34#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties35#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties36#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties37#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties38#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties39#0;class#STDeck#0" expanded="false" />
           </folding>
         </state>
       </provider>
