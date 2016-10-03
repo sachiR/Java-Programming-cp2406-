@@ -82,4 +82,12 @@ public class STGame {
 
     public void dealCardsToEachPlayer() {
     }
+    private void changetoNextPlaerID(){
+        nextPlayerID++;
+        if(nextPlayerID >= numPlayers){
+            nextPlayerID = 0;
+        }
+    }
+
+    
 }
