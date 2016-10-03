@@ -28,16 +28,42 @@ public class STDeck {
         return this.LCards;
     }
 
-    public STDeck(){
-        for(int i = 0; i<54 ; i++){
-            STCard c = new STCard(i,"Play", "Title " + i);
+    public STDeck() {
+        for (int i = 0; i < 54; i++) {
+            STCard c = new STCard(i, "Play", "Title " + i);
             LCards.add(c);
             LoadCardProperties(i);
         }
-        for(int i = 0; i<6 ; i++){
-            STCard c = new STCard(i,"Trump", "Trunp Card " + i);
+        for (int i = 0; i < 6; i++) {
+            STCard c = new STCard(i, "Trump", "Trunp Card " + i);
             LCards.add(c);
+            LoadTrumpCardProperties(i);
         }
+    }
+
+    private void LoadTrumpCardProperties(int index) {
+        HashMap<String, List<String>> cp = new HashMap<String, List<String>>();
+        switch (index){
+            case 0:
+                cp = CardProperties54();
+                break;
+            case 1:
+                cp = CardProperties55();
+                break;
+            case 2:
+                cp = CardProperties56();
+                break;
+            case 3:
+                cp = CardProperties57();
+                break;
+            case 4:
+                cp = CardProperties58();
+                break;
+            case 5:
+                cp = CardProperties59();
+                break;
+        }
+        this.LCards.get(index).setCardProperties(cp);
     }
 
     private void LoadCardProperties(int index){
@@ -209,7 +235,6 @@ public class STDeck {
         this.LCards.get(index).setCardProperties(cp);
 
     }
-
 
     public void printCardAndProperties(int index) {
         //int i = 0;
@@ -1347,22 +1372,465 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties40(){
-        
-    }
-    private HashMap<String, List<String>> CardProperties41(){}
-    private HashMap<String, List<String>> CardProperties42(){}
-    private HashMap<String, List<String>> CardProperties43(){}
-    private HashMap<String, List<String>> CardProperties44(){}
-    private HashMap<String, List<String>> CardProperties45(){}
-    private HashMap<String, List<String>> CardProperties46(){}
-    private HashMap<String, List<String>> CardProperties47(){}
-    private HashMap<String, List<String>> CardProperties48(){}
-    private HashMap<String, List<String>> CardProperties49(){}
-    private HashMap<String, List<String>> CardProperties50(){}
-    private HashMap<String, List<String>> CardProperties51(){}
-    private HashMap<String, List<String>> CardProperties52(){}
-    private HashMap<String, List<String>> CardProperties53(){}
+        LCards.get(1).setCardTitle("Monazite");
 
+        HashMap<String,List<String>> dct =  new HashMap<>();
+
+        List<String> lst1 = new ArrayList<>();
+        lst1.add("5");
+        dct.put("hardness",lst1);
+
+        List<String> lst2 = new ArrayList<>();
+        lst2.add("5.0 - 5.3");
+        dct.put("specific_gravity",lst2);
+
+        List<String> lst3 = new ArrayList<>();
+        lst3.add("1 good, 1 poor");
+        dct.put("cleavage",lst3);
+
+        List<String> lst4 = new ArrayList<>();
+        lst4.add("trace");
+        dct.put("Crustal Abundance",lst4);
+
+        List<String> lst5 = new ArrayList<>();
+        lst5.add("moderate");
+        dct.put("Economic Value",lst5);
+
+        return  dct;
+
+    }
+    private HashMap<String, List<String>> CardProperties41(){
+        LCards.get(1).setCardTitle("Calcite");
+
+        HashMap<String,List<String>> dct =  new HashMap<>();
+
+        List<String> lst1 = new ArrayList<>();
+        lst1.add("3");
+        dct.put("hardness",lst1);
+
+        List<String> lst2 = new ArrayList<>();
+        lst2.add("2.7");
+        dct.put("specific_gravity",lst2);
+
+        List<String> lst3 = new ArrayList<>();
+        lst3.add("3 perfect");
+        dct.put("cleavage",lst3);
+
+        List<String> lst4 = new ArrayList<>();
+        lst4.add("moderate");
+        dct.put("Crustal Abundance",lst4);
+
+        List<String> lst5 = new ArrayList<>();
+        lst5.add("high");
+        dct.put("Economic Value",lst5);
+
+        return  dct;
+
+    }
+    private HashMap<String, List<String>> CardProperties42(){
+        LCards.get(1).setCardTitle("Dolomite");
+
+        HashMap<String,List<String>> dct =  new HashMap<>();
+
+        List<String> lst1 = new ArrayList<>();
+        lst1.add("3.5 - 4");
+        dct.put("hardness",lst1);
+
+        List<String> lst2 = new ArrayList<>();
+        lst2.add("2.9");
+        dct.put("specific_gravity",lst2);
+
+        List<String> lst3 = new ArrayList<>();
+        lst3.add("3 perfect");
+        dct.put("cleavage",lst3);
+
+        List<String> lst4 = new ArrayList<>();
+        lst4.add("low");
+        dct.put("Crustal Abundance",lst4);
+
+        List<String> lst5 = new ArrayList<>();
+        lst5.add("low");
+        dct.put("Economic Value",lst5);
+
+        return  dct;
+
+    }
+    private HashMap<String, List<String>> CardProperties43(){
+        LCards.get(1).setCardTitle("Magnesite");
+
+        HashMap<String,List<String>> dct =  new HashMap<>();
+
+        List<String> lst1 = new ArrayList<>();
+        lst1.add("4");
+        dct.put("hardness",lst1);
+
+        List<String> lst2 = new ArrayList<>();
+        lst2.add("3.0");
+        dct.put("specific_gravity",lst2);
+
+        List<String> lst3 = new ArrayList<>();
+        lst3.add("3 perfect");
+        dct.put("cleavage",lst3);
+
+        List<String> lst4 = new ArrayList<>();
+        lst4.add("low");
+        dct.put("Crustal Abundance",lst4);
+
+        List<String> lst5 = new ArrayList<>();
+        lst5.add("moderate");
+        dct.put("Economic Value",lst5);
+
+        return  dct;
+
+    }
+    private HashMap<String, List<String>> CardProperties44(){
+        LCards.get(1).setCardTitle("Siderite");
+
+        HashMap<String,List<String>> dct =  new HashMap<>();
+
+        List<String> lst1 = new ArrayList<>();
+        lst1.add("4 - 4.5");
+        dct.put("hardness",lst1);
+
+        List<String> lst2 = new ArrayList<>();
+        lst2.add("4");
+        dct.put("specific_gravity",lst2);
+
+        List<String> lst3 = new ArrayList<>();
+        lst3.add("3 perfect");
+        dct.put("cleavage",lst3);
+
+        List<String> lst4 = new ArrayList<>();
+        lst4.add("trace");
+        dct.put("Crustal Abundance",lst4);
+
+        List<String> lst5 = new ArrayList<>();
+        lst5.add("moderate");
+        dct.put("Economic Value",lst5);
+
+        return  dct;
+
+    }
+    private HashMap<String, List<String>> CardProperties45(){
+        LCards.get(1).setCardTitle("Magnetite");
+
+        HashMap<String,List<String>> dct =  new HashMap<>();
+
+        List<String> lst1 = new ArrayList<>();
+        lst1.add("5.5 - 6");
+        dct.put("hardness",lst1);
+
+        List<String> lst2 = new ArrayList<>();
+        lst2.add("5.2");
+        dct.put("specific_gravity",lst2);
+
+        List<String> lst3 = new ArrayList<>();
+        lst3.add("none");
+        dct.put("cleavage",lst3);
+
+        List<String> lst4 = new ArrayList<>();
+        lst4.add("moderate");
+        dct.put("Crustal Abundance",lst4);
+
+        List<String> lst5 = new ArrayList<>();
+        lst5.add("very high");
+        dct.put("Economic Value",lst5);
+
+        return  dct;
+
+    }
+    private HashMap<String, List<String>> CardProperties46(){
+        LCards.get(1).setCardTitle("Hematite");
+
+        HashMap<String,List<String>> dct =  new HashMap<>();
+
+        List<String> lst1 = new ArrayList<>();
+        lst1.add("5 - 6");
+        dct.put("hardness",lst1);
+
+        List<String> lst2 = new ArrayList<>();
+        lst2.add("5.3");
+        dct.put("specific_gravity",lst2);
+
+        List<String> lst3 = new ArrayList<>();
+        lst3.add("none");
+        dct.put("cleavage",lst3);
+
+        List<String> lst4 = new ArrayList<>();
+        lst4.add("trace");
+        dct.put("Crustal Abundance",lst4);
+
+        List<String> lst5 = new ArrayList<>();
+        lst5.add("high");
+        dct.put("Economic Value",lst5);
+
+        return  dct;
+
+    }
+    private HashMap<String, List<String>> CardProperties47(){
+        LCards.get(1).setCardTitle("Chromite");
+
+        HashMap<String,List<String>> dct =  new HashMap<>();
+
+        List<String> lst1 = new ArrayList<>();
+        lst1.add("5.5");
+        dct.put("hardness",lst1);
+
+        List<String> lst2 = new ArrayList<>();
+        lst2.add("4.5 - 5.1");
+        dct.put("specific_gravity",lst2);
+
+        List<String> lst3 = new ArrayList<>();
+        lst3.add("none");
+        dct.put("cleavage",lst3);
+
+        List<String> lst4 = new ArrayList<>();
+        lst4.add("low");
+        dct.put("Crustal Abundance",lst4);
+
+        List<String> lst5 = new ArrayList<>();
+        lst5.add("high");
+        dct.put("Economic Value",lst5);
+
+        return  dct;
+
+    }
+    private HashMap<String, List<String>> CardProperties48(){
+        LCards.get(1).setCardTitle("Ilmenite");
+
+        HashMap<String,List<String>> dct =  new HashMap<>();
+
+        List<String> lst1 = new ArrayList<>();
+        lst1.add("5 - 6");
+        dct.put("hardness",lst1);
+
+        List<String> lst2 = new ArrayList<>();
+        lst2.add("4.7 - 4.8");
+        dct.put("specific_gravity",lst2);
+
+        List<String> lst3 = new ArrayList<>();
+        lst3.add("none");
+        dct.put("cleavage",lst3);
+
+        List<String> lst4 = new ArrayList<>();
+        lst4.add("low");
+        dct.put("Crustal Abundance",lst4);
+
+        List<String> lst5 = new ArrayList<>();
+        lst5.add("moderate");
+        dct.put("Economic Value",lst5);
+
+        return  dct;
+
+    }
+    private HashMap<String, List<String>> CardProperties49(){
+        LCards.get(1).setCardTitle("Rutile");
+
+        HashMap<String,List<String>> dct =  new HashMap<>();
+
+        List<String> lst1 = new ArrayList<>();
+        lst1.add("6 - 6.5");
+        dct.put("hardness",lst1);
+
+        List<String> lst2 = new ArrayList<>();
+        lst2.add("4.3");
+        dct.put("specific_gravity",lst2);
+
+        List<String> lst3 = new ArrayList<>();
+        lst3.add("2 good");
+        dct.put("cleavage",lst3);
+
+        List<String> lst4 = new ArrayList<>();
+        lst4.add("low");
+        dct.put("Crustal Abundance",lst4);
+
+        List<String> lst5 = new ArrayList<>();
+        lst5.add("high");
+        dct.put("Economic Value",lst5);
+
+        return  dct;
+
+    }
+    private HashMap<String, List<String>> CardProperties50(){
+        LCards.get(1).setCardTitle("Corundum");
+
+        HashMap<String,List<String>> dct =  new HashMap<>();
+
+        List<String> lst1 = new ArrayList<>();
+        lst1.add("9");
+        dct.put("hardness",lst1);
+
+        List<String> lst2 = new ArrayList<>();
+        lst2.add("4.0");
+        dct.put("specific_gravity",lst2);
+
+        List<String> lst3 = new ArrayList<>();
+        lst3.add("none");
+        dct.put("cleavage",lst3);
+
+        List<String> lst4 = new ArrayList<>();
+        lst4.add("trace");
+        dct.put("Crustal Abundance",lst4);
+
+        List<String> lst5 = new ArrayList<>();
+        lst5.add("moderate");
+        dct.put("Economic Value",lst5);
+
+        return  dct;
+
+    }
+    private HashMap<String, List<String>> CardProperties51(){
+        LCards.get(1).setCardTitle("Cassiterite");
+
+        HashMap<String,List<String>> dct =  new HashMap<>();
+
+        List<String> lst1 = new ArrayList<>();
+        lst1.add("6 - 7");
+        dct.put("hardness",lst1);
+
+        List<String> lst2 = new ArrayList<>();
+        lst2.add("6.9 - 7.1");
+        dct.put("specific_gravity",lst2);
+
+        List<String> lst3 = new ArrayList<>();
+        lst3.add("1 good, 1 poor");
+        dct.put("cleavage",lst3);
+
+        List<String> lst4 = new ArrayList<>();
+        lst4.add("trace");
+        dct.put("Crustal Abundance",lst4);
+
+        List<String> lst5 = new ArrayList<>();
+        lst5.add("high");
+        dct.put("Economic Value",lst5);
+
+        return  dct;
+
+    }
+    private HashMap<String, List<String>> CardProperties52(){
+        LCards.get(1).setCardTitle("Gibbsite");
+
+        HashMap<String,List<String>> dct =  new HashMap<>();
+
+        List<String> lst1 = new ArrayList<>();
+        lst1.add("2.5 - 3.5");
+        dct.put("hardness",lst1);
+
+        List<String> lst2 = new ArrayList<>();
+        lst2.add("2.4");
+        dct.put("specific_gravity",lst2);
+
+        List<String> lst3 = new ArrayList<>();
+        lst3.add("1 perfect");
+        dct.put("cleavage",lst3);
+
+        List<String> lst4 = new ArrayList<>();
+        lst4.add("low");
+        dct.put("Crustal Abundance",lst4);
+
+        List<String> lst5 = new ArrayList<>();
+        lst5.add("high");
+        dct.put("Economic Value",lst5);
+
+        return  dct;
+
+    }
+    private HashMap<String, List<String>> CardProperties53(){
+        LCards.get(1).setCardTitle("Goethite");
+
+        HashMap<String,List<String>> dct =  new HashMap<>();
+
+        List<String> lst1 = new ArrayList<>();
+        lst1.add("5 - 5.5");
+        dct.put("hardness",lst1);
+
+        List<String> lst2 = new ArrayList<>();
+        lst2.add("4.3");
+        dct.put("specific_gravity",lst2);
+
+        List<String> lst3 = new ArrayList<>();
+        lst3.add("1 perfect, 1 good");
+        dct.put("cleavage",lst3);
+
+        List<String> lst4 = new ArrayList<>();
+        lst4.add("moderate");
+        dct.put("Crustal Abundance",lst4);
+
+        List<String> lst5 = new ArrayList<>();
+        lst5.add("moderate");
+        dct.put("Economic Value",lst5);
+
+        return  dct;
+
+    }
+    //6trump cards
+    private HashMap<String, List<String>> CardProperties54(){
+        LCards.get(1).setCardTitle("The Miner");
+
+        HashMap<String,List<String>> dct =  new HashMap<>();
+
+        List<String> lst1 = new ArrayList<>();
+        lst1.add("Economic value");
+        dct.put("subtitle",lst1);
+
+        return  dct;
+
+    }
+    private HashMap<String, List<String>> CardProperties55(){
+        LCards.get(1).setCardTitle("The Petrologist");
+
+        HashMap<String,List<String>> dct =  new HashMap<>();
+
+        List<String> lst1 = new ArrayList<>();
+        lst1.add("Crustal abundance");
+        dct.put("subtitle",lst1);
+
+        return  dct;
+    }
+    private HashMap<String, List<String>> CardProperties56(){
+        LCards.get(1).setCardTitle("The Gemmologist");
+
+        HashMap<String,List<String>> dct =  new HashMap<>();
+
+        List<String> lst1 = new ArrayList<>();
+        lst1.add("Hardness");
+        dct.put("subtitle",lst1);
+
+        return  dct;
+    }
+    private HashMap<String, List<String>> CardProperties57(){
+        LCards.get(1).setCardTitle("The Mineralogist");
+
+        HashMap<String,List<String>> dct =  new HashMap<>();
+
+        List<String> lst1 = new ArrayList<>();
+        lst1.add("Cleavage");
+        dct.put("subtitle",lst1);
+
+        return  dct;
+    }
+    private HashMap<String, List<String>> CardProperties58(){
+        LCards.get(1).setCardTitle("The Geophysicist");
+
+        HashMap<String,List<String>> dct =  new HashMap<>();
+
+        List<String> lst1 = new ArrayList<>();
+        lst1.add("Specific gravity");
+        dct.put("subtitle",lst1);
+
+        return  dct;
+    }
+    private HashMap<String, List<String>> CardProperties59(){
+        LCards.get(1).setCardTitle("The Geologist");
+
+        HashMap<String,List<String>> dct =  new HashMap<>();
+
+        List<String> lst1 = new ArrayList<>();
+        lst1.add("Change to trumps category of your choice");
+        dct.put("subtitle",lst1);
+
+        return  dct;
+    }
 }
 
 
