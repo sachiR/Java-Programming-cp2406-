@@ -37,16 +37,9 @@ public class Main {
         game.getDeck().ShuffleTheDeck();
         game.DealCardsToEachPlayer(8);
 
-        /*
-        for(int i =0 ; i< game.getNumPlayers(); i++){
-            System.out.println("=======Player ID = " + i + "============");
-            game.printCardsInHand(i);
-        }
-        */
-
         while (true){
-            boolean exitflag = false;
-            System.out.println("1.  Play a Card)");
+            boolean exitFlag = false;
+            System.out.println("1.  Play a Card");
             System.out.println("2.  Show all Card in my Hand");
             System.out.println("3.  Draw a Card from the Deck");
             System.out.println("4.  Exit Current Game");
@@ -54,7 +47,7 @@ public class Main {
 
             switch (opt){ //options in the menu
                 case 1:
-                    System.out.println("4.  Exit Current Game");
+
                     break;
                 case 2:
                     //howToPlay();
@@ -62,18 +55,15 @@ public class Main {
                     {
                         game.getDeck().printCardAndProperties(card);
                     }
-
-
-
                     break;
                 case 3:
                     //howToPlay();
                     break;
                 case 4:
-                    exitflag = true;
+                    exitFlag = true;
                     break;
             }
-            if(exitflag){break;}
+            if(exitFlag){break;}
         }
         //game.dealCardsToEachPlayer();
     }

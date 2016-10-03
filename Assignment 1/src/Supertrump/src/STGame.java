@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.Scanner;
-import java.util.HashMap;
 
 
 public class STGame {
@@ -28,16 +26,17 @@ public class STGame {
         Random rnd = new Random();
         this.dealerID = rnd.nextInt(numPlayers);
         nextPlayerID = this.dealerID;
-        changeToNextPlayerID();
         System.out.println("\nRandom dealer is "+nextPlayerID);
+        changeToFirstPlayerID(dealerID);
         System.out.println("--------------------------------");
     }
 
-    private void changeToNextPlayerID() {
-        nextPlayerID++;
-        if(nextPlayerID >= numPlayers){
-            nextPlayerID = 0;
+    private void changeToFirstPlayerID(int dealerID) {
+        dealerID++;
+        if(dealerID >= numPlayers){
+            dealerID = 0;
         }
+        System.out.println("First player is "+ dealerID);
     }
 
     public void DealCardsToEachPlayer(int numberOfCards){
