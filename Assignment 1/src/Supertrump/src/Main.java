@@ -30,43 +30,46 @@ public class Main {
         int numOfPlayers = getNumOfPlayers();
         //STDeck deck = new STDeck();
         STGame game = new STGame(numOfPlayers, new STDeck());
-        for(int i=0; i< game.getDeck().getCards().size(); i++){
+        for (int i = 0; i < game.getDeck().getCards().size(); i++) {
             game.getDeck().printCardAndProperties(game.getDeck().getCards().get(i));
         }
 
         game.getDeck().ShuffleTheDeck();
         game.DealCardsToEachPlayer(8);
 
-        while (true){
+        while (true) {
             boolean exitFlag = false;
             System.out.println("1.  Play a Card");
             System.out.println("2.  Show all Card in my Hand");
             System.out.println("3.  Draw a Card from the Deck");
             System.out.println("4.  Exit Current Game");
-            int opt =  getUserMenuChoice(1,4);
+            int opt = getUserMenuChoice(1, 4);
 
-            switch (opt){ //options in the menu
+            switch (opt) { //options in the menu
                 case 1:
-
                     break;
+
                 case 2:
                     //howToPlay();
-                    for (STCard card : game.getPlayers().get(0).getCardsInHand())
-                    {
+                    for (STCard card : game.getPlayers().get(0).getCardsInHand()) {
                         game.getDeck().printCardAndProperties(card);
+                        System.out.println("");
                     }
                     break;
                 case 3:
-                    //howToPlay();
+                    System.out.println(game.drawCardFromDeck());
+                    System.out.println("");
                     break;
                 case 4:
                     exitFlag = true;
                     break;
             }
-            if(exitFlag){break;}
+            if (exitFlag) {
+                break;
+            }
         }
-        //game.dealCardsToEachPlayer();
     }
+
 
     private static int getNumOfPlayers() {
         Scanner reader = new Scanner(System.in); // Reading from System.in

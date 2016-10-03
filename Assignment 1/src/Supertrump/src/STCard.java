@@ -4,7 +4,7 @@ import java.util.List;
 public class STCard {
     private int _cardID;
     private String _cardType;
-    private String _cardTitie;
+    private String _cardTitle;
     private HashMap<String,List<String>> _cardProperties;
 
     public int getCardID(){
@@ -14,9 +14,9 @@ public class STCard {
         return this._cardType;
     }
     public String getCardTitle(){
-        return this._cardTitie;
+        return this._cardTitle;
     }
-    public void setCardTitle(String value){this._cardTitie = value;}
+    public void setCardTitle(String value){this._cardTitle = value;}
     public HashMap<String, List<String>> getCardProperties(){
         return this._cardProperties;
     }
@@ -27,7 +27,7 @@ public class STCard {
     public STCard(int cardID, String cardType, String cardTitle){
         this._cardID = cardID;
         this._cardType = cardType;
-        this._cardTitie = cardTitle;
+        this._cardTitle = cardTitle;
     }
 
 

@@ -10,6 +10,7 @@ public class STGame {
     private int lastPlayerID = -1;
     private List<STPlayer> players;
     private STDeck deck;
+    public int drawCardFromDeck;
 
     private STCard lastPlayedCard;
 
@@ -27,16 +28,16 @@ public class STGame {
         this.dealerID = rnd.nextInt(numPlayers);
         nextPlayerID = this.dealerID;
         System.out.println("\nRandom dealer is "+nextPlayerID);
-        changeToFirstPlayerID(dealerID);
+        changeToPlayerID(dealerID);
         System.out.println("--------------------------------");
     }
 
-    private void changeToFirstPlayerID(int dealerID) {
+    private void changeToPlayerID(int dealerID) {
         dealerID++;
         if(dealerID >= numPlayers){
             dealerID = 0;
         }
-        System.out.println("First player is "+ dealerID);
+        System.out.println("Next player is "+ dealerID);
     }
 
     public void DealCardsToEachPlayer(int numberOfCards){
@@ -106,5 +107,16 @@ public class STGame {
 
     public void setLastPlayedCard(STCard lastPlayedCard) {
         this.lastPlayedCard = lastPlayedCard;
+    }
+
+    public static STCard PlayCard() {
+        //STCard c = new STCard();
+        //int cardToPlay = new Random.next(this.players[next]);
+        return null;
+    }
+
+    public int drawCardFromDeck() {
+        int rnd = new Random().nextInt(this.deck.getCards().size());
+        return rnd;
     }
 }
