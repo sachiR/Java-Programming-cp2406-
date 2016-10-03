@@ -8,46 +8,35 @@ public class Main {
 
     public static void main(String[] args) throws IOException, SAXException, ParserConfigurationException {
         String userName = showWelcome();//username
-        showMenu();
-        int opt = getUserMenuChoice();
-        switch (opt){ //options in the menu
-            case 1:
-                startNewGame();
-                break;
-            case 2:
-                howToPlay();
-                repeatMenuSwitch();
-                break;
-            case 3:
-                System.out.println("Thank you for playing "+userName+", Come Again..");
-                System.exit(opt); //exit the game
+        //boolean exitflag = false;
+        while (true){
+            showMenu();
+            int opt = getUserMenuChoice();
+            switch (opt){ //options in the menu
+                case 1:
+                    startNewGame();
+                    break;
+                case 2:
+                    howToPlay();
+                    break;
+                case 3:
+                    System.out.println("Thank you for playing "+userName+", Come Again..");
+                    System.exit(opt); //exit the game
+            }
         }
-    }
 
-    private static void repeatMenuSwitch() throws IOException, SAXException, ParserConfigurationException {
-        showMenu();
-        int opt = getUserMenuChoice();
-        switch (opt){ //options in the menu
-            case 1:
-                startNewGame();
-                break;
-            case 2:
-                howToPlay();
-                repeatMenuSwitch();
-                break;
-            case 3:
-                System.out.println("Thank you for playing. Come Again..");
-                System.exit(opt); //exit the game
-        }
     }
 
     private static void startNewGame() throws ParserConfigurationException, SAXException, IOException {
         int numOfPlayers = getNumOfPlayers();
-        STDeck deck = new STDeck();
-        STGame game = new STGame(numOfPlayers,deck);
-        deck.cardAndProperties0();
-        deck.ShuffleTheDeck();
-        game.dealCardsToEachPlayer();
+        //STDeck deck = new STDeck();
+        STGame game = new STGame(numOfPlayers, new STDeck());
+        for(int i=0; i< game.getDeck().getCards().size(); i++){
+            game.getDeck().printCardAndProperties(i);
+        }
+
+        game.getDeck().ShuffleTheDeck();
+        //game.dealCardsToEachPlayer();
     }
 
     private static int getNumOfPlayers() {
@@ -71,21 +60,21 @@ public class Main {
                 "term of abundance in the Earths crust(continental and oceanic) and value to modern societies.");
         System.out.println("\nObjective: \nto be the first player to lose all of your cards");
         System.out.println("\nHow to play: \n " +
-                "1.Randomly chosen dealer shuffles and deal 8 cards each.each player can look at their cards but cannot look at others." +
+                "1. Randomly chosen dealer shuffles and deal 8 cards each.each player can look at their cards but cannot look at others." +
                 "the remaining card pack is placed down on the table.\n " +
-                "2.The player on the left of the dealer goes first placing a mineral card. The Player" +
+                "2. The player on the left of the dealer goes first placing a mineral card. The Player" +
                 "must state the mineral nam, one of the five categories(i.e.Hardness,Specific Gravity....) and \nthe top value of that category.\n" +
                 "e.g. Glaucophane, Specific Gravity, 3.2 \n " +
-                "3.Next player is the one left to the last player.He/she must play a card that has a higher value in the playing category than the played card.\n " +
-                "4.If a player does not have a mineral card with a higher value or trump being played, then player must pass and pick up one card from the " +
+                "3. Next player is the one left to the last player.He/she must play a card that has a higher value in the playing category than the played card.\n " +
+                "4. If a player does not have a mineral card with a higher value or trump being played, then player must pass and pick up one card from the " +
                 "deck. The player then cannot play again\n until all but one player has passed, or until another player throws a super-trump card to change thr trump" +
                 "category. A player is allowed to pass even if they\n still hold cards that could be played.\n " +
-                "5.If the player has a super-trump card they may play this at any of their turns. By placing a super-trump card, the player changed the playing category " +
+                "5. If the player has a super-trump card they may play this at any of their turns. By placing a super-trump card, the player changed the playing category " +
                 "or trump according to \nthe instructions on the card. At this stage any player who passed on previous round is now able to play again. \n " +
                 "NOTE: If a Player throws The Geophysicist card with the Magnetite card, they win the hand.\n " +
-                "6.The game continues players taking turns until all but one player has passed. The last player then gets to lead out the next round and chooses the trump" +
+                "6. The game continues players taking turns until all but one player has passed. The last player then gets to lead out the next round and chooses the trump" +
                 "category to be played.\n " +
-                "7.The winner of the game is the first player to lose all of their cards. The game continue until all but one player has lost their cards.\n\n ");
+                "7. The winner of the game is the first player to lose all of their cards. The game continue until all but one player has lost their cards.\n\n ");
     }
 
 
@@ -113,6 +102,7 @@ public class Main {
     }
 
     private static void showMenu() {
+        //CLEAR SCREEN ===
         System.out.println("Press 1 to start game"); // shows menu with 3 options
         System.out.println("Press 2 to how to play the game");
         System.out.println("Press 3 to quit game");

@@ -11,14 +11,16 @@ public class STGame {
     private int lastPlayerID = -1;
     private List<STPlayer> players;
     private STDeck deck;
+
     private STCard lastPlayedCard;
 
 
     public STGame(int numOfPlayers, STDeck deck) {
         this.numPlayers = numOfPlayers;
         players = InitialisePlayers();
+        this.deck = deck;
         SelectDealer();
-        deck = new STDeck();
+        //deck = new STDeck();
     }
 
     private void SelectDealer() {
@@ -59,10 +61,6 @@ public class STGame {
         this.dealerID = dealerID;
     }
 
-    public int getNextPlayerID() {
-        return nextPlayerID;
-    }
-
     public int getLastPlayerID() {
         return lastPlayerID;
     }
@@ -72,7 +70,7 @@ public class STGame {
     }
 
     public STDeck getDeck() {
-        return deck;
+        return this.deck;
     }
 
     public STCard getLastPlayedCard() {
@@ -80,14 +78,7 @@ public class STGame {
     }
 
 
-    public void dealCardsToEachPlayer() {
+    public void setLastPlayedCard(STCard lastPlayedCard) {
+        this.lastPlayedCard = lastPlayedCard;
     }
-    private void changetoNextPlaerID(){
-        nextPlayerID++;
-        if(nextPlayerID >= numPlayers){
-            nextPlayerID = 0;
-        }
-    }
-
-    
 }

@@ -7,6 +7,7 @@ public class STPlayer {
     private List<STCard> cardsInHand;
     private int playerID;
     private String playerName;
+    public List<STCard> CardsInHand;
 
     public STPlayer(int playerID) {
         this.playerID = playerID;

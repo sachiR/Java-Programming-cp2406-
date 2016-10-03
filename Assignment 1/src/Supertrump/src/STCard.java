@@ -16,6 +16,7 @@ public class STCard {
     public String getCardTitle(){
         return this._cardTitie;
     }
+    public void setCardTitle(String value){this._cardTitie = value;}
     public HashMap<String, List<String>> getCardProperties(){
         return this._cardProperties;
     }

@@ -32,25 +32,82 @@ public class STDeck {
         for(int i = 0; i<54 ; i++){
             STCard c = new STCard(i,"P", "Title " + i);
             LCards.add(c);
+            LoadCardProperties(i);
         }
         for(int i = 0; i<6 ; i++){
             STCard c = new STCard(i,"T", "Trunp Card " + i);
             LCards.add(c);
         }
-        CardProperties0();
-        cardAndProperties0();
-        CardProperties1();
-        cardAndProperties1();
-        CardProperties2();
-        cardAndProperties2();
     }
 
-    private void CardProperties0(){
+    private void LoadCardProperties(int index){
+        HashMap<String, List<String>> cp = new HashMap<String, List<String>>();
+        switch (index){
+            case 0:
+                cp = CardProperties0();
+                break;
+            case 1:
+                cp = CardProperties1();
+                break;
+            case 2:
+                cp = CardProperties2();
+                break;
+            case 3:
+                cp = CardProperties3();
+                break;
+            case 4:
+                cp = CardProperties4();
+                break;
+            case 5:
+                cp = CardProperties5();
+                break;
+            case 6:
+                cp = CardProperties6();
+                break;
+            case 7:
+                cp = CardProperties7();
+                break;
+            case 8:
+                cp = CardProperties8();
+                break;
 
+        }
+        this.LCards.get(index).setCardProperties(cp);
+
+    }
+
+    public void printCardAndProperties(int index) {
+        //int i = 0;
+        System.out.println("---------------------------------");
+        System.out.println("CardID\t\t: "+getCards().get(index).getCardID());
+        System.out.println("CardType\t:"+getCards().get(index).getCardType());
+        //s
+        // System.out.println("CardTitle:"+getCards().get(i).getCardTitle());
+        try {
+            HashMap<String,List<String>> dct = getCards().get(index).getCardProperties();
+            String s=null;
+            System.out.println("   ===== Card Properties ======");
+            for (String key : dct.keySet())
+            {
+                if(s != key){
+                    System.out.print(key + "\t");
+                    s=key;
+                }
+                //System.out.println(key);
+                System.out.println("\t: " + getCards().get(index).getCardProperties().get(key));
+            }
+            //System.out.println(getCards().get(i).getCardProperties().get("hardness"));
+        }
+        catch (Exception e){
+            System.out.println("No Properties");
+        }
+    }
+
+
+    private HashMap<String, List<String>> CardProperties0(){
+
+        LCards.get(0).setCardTitle("Quartz");
         HashMap<String,List<String>> dct =  new HashMap<>();
-        List<String> lst0 = new ArrayList<>();
-        lst0.add("Quartz");
-        dct.put("Title",lst0);
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("7");
@@ -73,103 +130,54 @@ public class STDeck {
         lst5.add("moderate");
         dct.put("Economic Value",lst5);
 
-
-        this.LCards.get(0).setCardProperties(dct);
+        return  dct;
+        //this.LCards.get(0).setCardProperties(dct);
     }
+    private HashMap<String, List<String>> CardProperties1(){
 
-    public void cardAndProperties0() {
-        int i = 0;
-        System.out.println("---------------------------------");
-        System.out.println("CardID:"+getCards().get(i).getCardID());
-        System.out.println("CardType:"+getCards().get(i).getCardType());
-        //s
-        // System.out.println("CardTitle:"+getCards().get(i).getCardTitle());
-        try {
-            HashMap<String,List<String>> dct = getCards().get(i).getCardProperties();
-            for (String key : dct.keySet())
-            {
-                System.out.println(key);
-                System.out.println(getCards().get(i).getCardProperties().get(key));
-            }
-            //System.out.println(getCards().get(i).getCardProperties().get("hardness"));
-        }
-        catch (Exception e){
-            System.out.println("No Properties");
-        }
-    }
-    private void CardProperties1(){
+        LCards.get(1).setCardTitle("Plagioclase");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
-        List<String> lst0 = new ArrayList<>();
-        lst0.add("Plagioclase");
-        dct.put("Title",lst0);
 
         List<String> lst1 = new ArrayList<>();
-        lst1.add("6");
-        lst1.add("6.5");
+        lst1.add("6-6.5");
         dct.put("hardness",lst1);
 
         List<String> lst2 = new ArrayList<>();
-        lst2.add("2.6");
-        lst2.add("2.8");
+        lst2.add("2.6-2.8");
         dct.put("specific_gravity",lst2);
 
         List<String> lst3 = new ArrayList<>();
-        lst3.add("1 perfect");
-        lst3.add("1 good");
+        lst3.add("1 perfect, 1 good");
+        //lst3.add("");
         dct.put("cleavage",lst3);
 
         List<String> lst4 = new ArrayList<>();
-        lst4.add("veryhigh");
+        lst4.add("very high");
         dct.put("Crustal Abundance",lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("moderate");
         dct.put("Economic Value",lst5);
 
-
-        this.LCards.get(1).setCardProperties(dct);
+        return  dct;
     }
-
-    public void cardAndProperties1() {
-        int i = 1;
-        System.out.println("---------------------------------");
-        System.out.println("CardID:"+getCards().get(i).getCardID());
-        System.out.println("CardType:"+getCards().get(i).getCardType());
-        //s
-        // System.out.println("CardTitle:"+getCards().get(i).getCardTitle());
-        try {
-            HashMap<String,List<String>> dct = getCards().get(i).getCardProperties();
-            for (String key : dct.keySet())
-            {
-                System.out.println(key);
-                System.out.println(getCards().get(i).getCardProperties().get(key));
-            }
-            //System.out.println(getCards().get(i).getCardProperties().get("hardness"));
-        }
-        catch (Exception e){
-            System.out.println("No Properties");
-        }
-    }private void CardProperties2(){
+    private HashMap<String, List<String>> CardProperties2(){
+        LCards.get(1).setCardTitle("Orthoclase");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
-        List<String> lst0 = new ArrayList<>();
-        lst0.add("Orthoclase");
-        dct.put("Title",lst0);
 
         List<String> lst1 = new ArrayList<>();
-        lst1.add("6");
-        lst1.add("6.5");
+        lst1.add("6-6.5");
         dct.put("hardness",lst1);
 
         List<String> lst2 = new ArrayList<>();
-        lst2.add("2.5");
-        lst2.add("2.6");
+        lst2.add("2.5-2.6");
         dct.put("specific_gravity",lst2);
 
         List<String> lst3 = new ArrayList<>();
-        lst3.add("1 perfect");
-        lst3.add("1 good");
+        lst3.add("1 perfect, 1 good");
+        //lst3.add("");
         dct.put("cleavage",lst3);
 
         List<String> lst4 = new ArrayList<>();
@@ -180,28 +188,181 @@ public class STDeck {
         lst5.add("moderate");
         dct.put("Economic Value",lst5);
 
+        return  dct;
 
-        this.LCards.get(2).setCardProperties(dct);
+    }
+    private HashMap<String, List<String>> CardProperties3(){
+        LCards.get(1).setCardTitle("Biotite");
+
+        HashMap<String,List<String>> dct =  new HashMap<>();
+
+        List<String> lst1 = new ArrayList<>();
+        lst1.add("2.5-3");
+        dct.put("hardness",lst1);
+
+        List<String> lst2 = new ArrayList<>();
+        lst2.add("2.7-3.3");
+        dct.put("specific_gravity",lst2);
+
+        List<String> lst3 = new ArrayList<>();
+        lst3.add("1 perfect");
+        dct.put("cleavage",lst3);
+
+        List<String> lst4 = new ArrayList<>();
+        lst4.add("moderate");
+        dct.put("Crustal Abundance",lst4);
+
+        List<String> lst5 = new ArrayList<>();
+        lst5.add("low");
+        dct.put("Economic Value",lst5);
+
+        return  dct;
+
+    }
+    private HashMap<String, List<String>> CardProperties4(){
+        LCards.get(1).setCardTitle("Muscovite");
+
+        HashMap<String,List<String>> dct =  new HashMap<>();
+
+        List<String> lst1 = new ArrayList<>();
+        lst1.add("2.5-3");
+        dct.put("hardness",lst1);
+
+        List<String> lst2 = new ArrayList<>();
+        lst2.add("2.8-2.9");
+        dct.put("specific_gravity",lst2);
+
+        List<String> lst3 = new ArrayList<>();
+        lst3.add("1 perfect");
+        dct.put("cleavage",lst3);
+
+        List<String> lst4 = new ArrayList<>();
+        lst4.add("moderate");
+        dct.put("Crustal Abundance",lst4);
+
+        List<String> lst5 = new ArrayList<>();
+        lst5.add("moderate");
+        dct.put("Economic Value",lst5);
+
+        return  dct;
+
+    }
+    private HashMap<String, List<String>> CardProperties5(){
+        LCards.get(1).setCardTitle("Hornblende");
+
+        HashMap<String,List<String>> dct =  new HashMap<>();
+
+        List<String> lst1 = new ArrayList<>();
+        lst1.add("5-6");
+        dct.put("hardness",lst1);
+
+        List<String> lst2 = new ArrayList<>();
+        lst2.add("3.0-3.5");
+        dct.put("specific_gravity",lst2);
+
+        List<String> lst3 = new ArrayList<>();
+        lst3.add("2 good");
+        dct.put("cleavage",lst3);
+
+        List<String> lst4 = new ArrayList<>();
+        lst4.add("moderate");
+        dct.put("Crustal Abundance",lst4);
+
+        List<String> lst5 = new ArrayList<>();
+        lst5.add("trivial");
+        dct.put("Economic Value",lst5);
+
+        return  dct;
+
+    }
+    private HashMap<String, List<String>> CardProperties6(){
+        LCards.get(1).setCardTitle("Actinolite");
+
+        HashMap<String,List<String>> dct =  new HashMap<>();
+
+        List<String> lst1 = new ArrayList<>();
+        lst1.add("5-6");
+        dct.put("hardness",lst1);
+
+        List<String> lst2 = new ArrayList<>();
+        lst2.add("3.0-3.5");
+        dct.put("specific_gravity",lst2);
+
+        List<String> lst3 = new ArrayList<>();
+        lst3.add("2 good");
+        dct.put("cleavage",lst3);
+
+        List<String> lst4 = new ArrayList<>();
+        lst4.add("low");
+        dct.put("Crustal Abundance",lst4);
+
+        List<String> lst5 = new ArrayList<>();
+        lst5.add("low");
+        dct.put("Economic Value",lst5);
+
+        return  dct;
+
+    }
+    private HashMap<String, List<String>> CardProperties7(){
+        LCards.get(1).setCardTitle("Glaucophane");
+
+        HashMap<String,List<String>> dct =  new HashMap<>();
+
+        List<String> lst1 = new ArrayList<>();
+        lst1.add("6");
+        dct.put("hardness",lst1);
+
+        List<String> lst2 = new ArrayList<>();
+        lst2.add("3.0-3.2");
+        dct.put("specific_gravity",lst2);
+
+        List<String> lst3 = new ArrayList<>();
+        lst3.add("2 good");
+        dct.put("cleavage",lst3);
+
+        List<String> lst4 = new ArrayList<>();
+        lst4.add("low");
+        dct.put("Crustal Abundance",lst4);
+
+        List<String> lst5 = new ArrayList<>();
+        lst5.add("trivial");
+        dct.put("Economic Value",lst5);
+
+        return  dct;
+
+    }
+    private HashMap<String, List<String>> CardProperties8(){
+        LCards.get(1).setCardTitle("Olivine");
+
+        HashMap<String,List<String>> dct =  new HashMap<>();
+
+        List<String> lst1 = new ArrayList<>();
+        lst1.add("6.5-7");
+        dct.put("hardness",lst1);
+
+        List<String> lst2 = new ArrayList<>();
+        lst2.add("3.2-4.4");
+        dct.put("specific_gravity",lst2);
+
+        List<String> lst3 = new ArrayList<>();
+        lst3.add("2 poor");
+        dct.put("cleavage",lst3);
+
+        List<String> lst4 = new ArrayList<>();
+        lst4.add("high");
+        dct.put("Crustal Abundance",lst4);
+
+        List<String> lst5 = new ArrayList<>();
+        lst5.add("low");
+        dct.put("Economic Value",lst5);
+
+        return  dct;
+
     }
 
-    public void cardAndProperties2() {
-        int i = 2;
-        System.out.println("---------------------------------");
-        System.out.println("CardID:"+getCards().get(i).getCardID());
-        System.out.println("CardType:"+getCards().get(i).getCardType());
-        //s
-        // System.out.println("CardTitle:"+getCards().get(i).getCardTitle());
-        try {
-            HashMap<String,List<String>> dct = getCards().get(i).getCardProperties();
-            for (String key : dct.keySet())
-            {
-                System.out.println(key);
-                System.out.println(getCards().get(i).getCardProperties().get(key));
-            }
-            //System.out.println(getCards().get(i).getCardProperties().get("hardness"));
-        }
-        catch (Exception e){
-            System.out.println("No Properties");
-        }
-    }
 }
+
+
+
+
+
