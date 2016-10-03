@@ -27,8 +27,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+            <state relative-caret-position="140">
+              <caret line="53" column="74" selection-start-line="53" selection-start-column="74" selection-end-line="53" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#main#0;class#Main#0" expanded="false" />
@@ -43,14 +43,16 @@
       <file leaf-file-name="STGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/STGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="123" column="17" selection-start-line="123" selection-start-column="17" selection-end-line="123" selection-end-column="17" />
+            <state relative-caret-position="220">
+              <caret line="134" column="20" selection-start-line="134" selection-start-column="20" selection-end-line="134" selection-end-column="20" />
               <folding>
                 <element signature="method#STGame#0;class#STGame#0" expanded="false" />
                 <element signature="method#SelectDealer#0;class#STGame#0" expanded="false" />
                 <element signature="method#changeToPlayerID#0;class#STGame#0" expanded="false" />
                 <element signature="method#GetNextPlayerID#0;class#STGame#0" expanded="false" />
                 <element signature="method#InitialisePlayers#0;class#STGame#0" expanded="false" />
+                <element signature="e#3417#3418#0" expanded="true" />
+                <element signature="e#3444#3445#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -176,8 +178,8 @@
         <option value="$PROJECT_DIR$/src/game/NextPlayerID.java" />
         <option value="$PROJECT_DIR$/src/STDeck.java" />
         <option value="$PROJECT_DIR$/src/STCard.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/STGame.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -578,6 +580,8 @@
             <element signature="method#changeToPlayerID#0;class#STGame#0" expanded="false" />
             <element signature="method#GetNextPlayerID#0;class#STGame#0" expanded="false" />
             <element signature="method#InitialisePlayers#0;class#STGame#0" expanded="false" />
+            <element signature="e#3417#3418#0" expanded="true" />
+            <element signature="e#3444#3445#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -699,6 +703,8 @@
             <element signature="method#changeToPlayerID#0;class#STGame#0" expanded="false" />
             <element signature="method#GetNextPlayerID#0;class#STGame#0" expanded="false" />
             <element signature="method#InitialisePlayers#0;class#STGame#0" expanded="false" />
+            <element signature="e#3417#3418#0" expanded="true" />
+            <element signature="e#3444#3445#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -913,6 +919,8 @@
             <element signature="method#changeToPlayerID#0;class#STGame#0" expanded="false" />
             <element signature="method#GetNextPlayerID#0;class#STGame#0" expanded="false" />
             <element signature="method#InitialisePlayers#0;class#STGame#0" expanded="false" />
+            <element signature="e#3417#3418#0" expanded="true" />
+            <element signature="e#3444#3445#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -941,6 +949,8 @@
             <element signature="method#changeToPlayerID#0;class#STGame#0" expanded="false" />
             <element signature="method#GetNextPlayerID#0;class#STGame#0" expanded="false" />
             <element signature="method#InitialisePlayers#0;class#STGame#0" expanded="false" />
+            <element signature="e#3417#3418#0" expanded="true" />
+            <element signature="e#3444#3445#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1162,22 +1172,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/STGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="123" column="17" selection-start-line="123" selection-start-column="17" selection-end-line="123" selection-end-column="17" />
+        <state relative-caret-position="220">
+          <caret line="134" column="20" selection-start-line="134" selection-start-column="20" selection-end-line="134" selection-end-column="20" />
           <folding>
             <element signature="method#STGame#0;class#STGame#0" expanded="false" />
             <element signature="method#SelectDealer#0;class#STGame#0" expanded="false" />
             <element signature="method#changeToPlayerID#0;class#STGame#0" expanded="false" />
             <element signature="method#GetNextPlayerID#0;class#STGame#0" expanded="false" />
             <element signature="method#InitialisePlayers#0;class#STGame#0" expanded="false" />
+            <element signature="e#3417#3418#0" expanded="true" />
+            <element signature="e#3444#3445#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+        <state relative-caret-position="140">
+          <caret line="53" column="74" selection-start-line="53" selection-start-column="74" selection-end-line="53" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#main#0;class#Main#0" expanded="false" />
