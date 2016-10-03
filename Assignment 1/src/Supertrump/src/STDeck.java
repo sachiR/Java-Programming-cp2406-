@@ -237,15 +237,15 @@ public class STDeck {
 
     }
 
-    public void printCardAndProperties(int index) {
+    public void printCardAndProperties(STCard card) {
         //int i = 0;
         System.out.println("---------------------------------");
-        System.out.println("CardID\t\t: "+getCards().get(index).getCardID());
-        System.out.println("CardType\t:"+getCards().get(index).getCardType());
+        System.out.println("CardID\t\t: "+card.getCardID());
+        System.out.println("CardType\t:"+card.getCardType());
         //s
         // System.out.println("CardTitle:"+getCards().get(i).getCardTitle());
         try {
-            HashMap<String,List<String>> dct = getCards().get(index).getCardProperties();
+            HashMap<String,List<String>> dct = card.getCardProperties();
             String s=null;
             System.out.println("   ===== Card Properties ======");
             for (String key : dct.keySet())
@@ -255,7 +255,7 @@ public class STDeck {
                     s=key;
                 }
                 //System.out.println(key);
-                System.out.println(": " + getCards().get(index).getCardProperties().get(key));
+                System.out.println(": " + card.getCardProperties().get(key));
             }
             //System.out.println(getCards().get(i).getCardProperties().get("hardness"));
         }

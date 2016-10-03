@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.HashMap;
 
 
 public class STGame {
@@ -62,7 +63,6 @@ public class STGame {
         return p;
     }
 
-
     private List<STPlayer> InitialisePlayers() {
         List<STPlayer> players = new ArrayList<STPlayer>();
         for (int i = 0; i < this.numPlayers; i++){
@@ -105,17 +105,6 @@ public class STGame {
         return lastPlayedCard;
     }
 
-    public void printCardsInHand(int playerid){
-        //for (STCard card : this.players.get(playerid).CardsInHand)
-
-        for(int i = 0; i<this.players.get(playerid).CardsInHand.size(); i++ )
-        {
-            System.out.println(" Card ID \t :" + this.players.get(playerid).getCardsInHand().get(i).getCardID());
-            System.out.println(" Card Title \t :" + this.players.get(playerid).getCardsInHand().get(i).getCardTitle());
-            System.out.println(" Card Type \t :" + this.players.get(playerid).getCardsInHand().get(i).getCardType());
-        }
-
-    }
     public void setLastPlayedCard(STCard lastPlayedCard) {
         this.lastPlayedCard = lastPlayedCard;
     }

@@ -31,17 +31,18 @@ public class Main {
         //STDeck deck = new STDeck();
         STGame game = new STGame(numOfPlayers, new STDeck());
         for(int i=0; i< game.getDeck().getCards().size(); i++){
-            game.getDeck().printCardAndProperties(i);
+            game.getDeck().printCardAndProperties(game.getDeck().getCards().get(i));
         }
 
         game.getDeck().ShuffleTheDeck();
         game.DealCardsToEachPlayer(8);
 
+        /*
         for(int i =0 ; i< game.getNumPlayers(); i++){
             System.out.println("=======Player ID = " + i + "============");
             game.printCardsInHand(i);
         }
-
+        */
 
         while (true){
             boolean exitflag = false;
@@ -57,6 +58,13 @@ public class Main {
                     break;
                 case 2:
                     //howToPlay();
+                    for (STCard card : game.getPlayers().get(0).getCardsInHand())
+                    {
+                        game.getDeck().printCardAndProperties(card);
+                    }
+
+
+
                     break;
                 case 3:
                     //howToPlay();
