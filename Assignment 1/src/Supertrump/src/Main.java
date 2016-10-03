@@ -35,6 +35,7 @@ public class Main {
 
         game.getDeck().ShuffleTheDeck();
         game.DealCardsToEachPlayer(8);
+        game.printNextPlayer();
 
         while (true) {
             boolean exitFlag = false;
@@ -46,11 +47,11 @@ public class Main {
 
             switch (opt) { //options in the menu
                 case 1:
-                    STGame.playCard();
+                    game.playCard();
                     STCard card = game.compareCard(game.nextPlayerID,game.getLastPlayedCard(),game.comapareCateegory());
                     break;
                 case 2:
-                    //howToPlay();
+                    //ShowAllCardsInHand();
                     for (STCard scard : game.getPlayers().get(0).getCardsInHand()){
                         game.getDeck().printCardAndProperties(scard);
                         System.out.println("");

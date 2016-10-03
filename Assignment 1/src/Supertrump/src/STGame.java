@@ -25,12 +25,28 @@ public class STGame {
     private void SelectDealer() {
         Random rnd = new Random();
         this.dealerID = rnd.nextInt(numPlayers);
-        nextPlayerID = this.dealerID;
-        System.out.println("\nRandom dealer is "+nextPlayerID);
-        changeToPlayerID(dealerID);
+        //nextPlayerID = this.dealerID;
+        nextPlayerID = GetNextPlayerID(this.dealerID);
+        /*
+        System.out.println("\nRandom dealer is "+this.dealerID);
+        System.out.println("\nNext Player is "+this.nextPlayerID);
+        //changeToPlayerID(dealerID);
+        System.out.println("--------------------------------");
+        */
+    }
+    private int GetNextPlayerID(int p) {
+        p++;
+        if(p >= numPlayers) {
+            p = 0;
+        }
+        return p;
+    }
+    public void printNextPlayer(){
+        System.out.println("\n Dealer is "+this.dealerID);
+        System.out.println("\nNext Player is "+this.nextPlayerID);
+
         System.out.println("--------------------------------");
     }
-
     private void changeToPlayerID(int dealerID) {
         dealerID++;
         if(dealerID >= numPlayers){
@@ -54,13 +70,7 @@ public class STGame {
         }
     }
 
-    private int GetNextPlayerID(int p) {
-        p++;
-        if(p >= numPlayers) {
-            p = 0;
-        }
-        return p;
-    }
+
 
     private List<STPlayer> InitialisePlayers() {
         List<STPlayer> players = new ArrayList<STPlayer>();

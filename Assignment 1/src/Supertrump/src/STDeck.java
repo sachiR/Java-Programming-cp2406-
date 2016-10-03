@@ -239,6 +239,7 @@ public class STDeck {
 
         System.out.println("---------------------------------");
         System.out.println("CardID\t\t: "+card.getCardID());
+        System.out.println("CardTitle\t: "+card.getCardTitle());
         System.out.println("CardType\t:"+card.getCardType());
 
         try {
@@ -263,6 +264,7 @@ public class STDeck {
 
 
     private HashMap<String, List<String>> CardProperties0(){
+
 
         LCards.get(0).setCardTitle("Quartz");
         HashMap<String,List<String>> dct =  new HashMap<>();
@@ -321,7 +323,7 @@ public class STDeck {
         return  dct;
     }
     private HashMap<String, List<String>> CardProperties2(){
-        LCards.get(1).setCardTitle("Orthoclase");
+        LCards.get(2).setCardTitle("Orthoclase");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -350,7 +352,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties3(){
-        LCards.get(1).setCardTitle("Biotite");
+        LCards.get(3).setCardTitle("Biotite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -378,7 +380,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties4(){
-        LCards.get(1).setCardTitle("Muscovite");
+        LCards.get(4).setCardTitle("Muscovite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -406,7 +408,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties5(){
-        LCards.get(1).setCardTitle("Hornblende");
+        LCards.get(5).setCardTitle("Hornblende");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -434,7 +436,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties6(){
-        LCards.get(1).setCardTitle("Actinolite");
+        LCards.get(6).setCardTitle("Actinolite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -462,7 +464,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties7(){
-        LCards.get(1).setCardTitle("Glaucophane");
+        LCards.get(7).setCardTitle("Glaucophane");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -490,7 +492,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties8(){
-        LCards.get(1).setCardTitle("Olivine");
+        LCards.get(8).setCardTitle("Olivine");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -518,7 +520,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties9(){
-        LCards.get(1).setCardTitle("Garnet");
+        LCards.get(9).setCardTitle("Garnet");
         HashMap<String,List<String>> dct =  new HashMap<>();
 
         List<String> lst1 = new ArrayList<>();
@@ -544,7 +546,7 @@ public class STDeck {
         return  dct;
     }
     private HashMap<String, List<String>> CardProperties10(){
-        LCards.get(1).setCardTitle("Titanite");
+        LCards.get(10).setCardTitle("Titanite");
         HashMap<String,List<String>> dct =  new HashMap<>();
 
         List<String> lst1 = new ArrayList<>();
@@ -570,7 +572,7 @@ public class STDeck {
         return  dct;
     }
     private HashMap<String, List<String>> CardProperties11(){
-        LCards.get(1).setCardTitle("Zircon");
+        LCards.get(11).setCardTitle("Zircon");
         HashMap<String,List<String>> dct =  new HashMap<>();
 
         List<String> lst1 = new ArrayList<>();
@@ -596,7 +598,7 @@ public class STDeck {
         return  dct;
     }
     private HashMap<String, List<String>> CardProperties12(){
-        LCards.get(1).setCardTitle("Augite");
+        LCards.get(12).setCardTitle("Augite");
         HashMap<String,List<String>> dct =  new HashMap<>();
 
         List<String> lst1 = new ArrayList<>();
@@ -622,7 +624,7 @@ public class STDeck {
         return  dct;
     }
     private HashMap<String, List<String>> CardProperties13(){
-        LCards.get(1).setCardTitle("Orthopyroxene");
+        LCards.get(13).setCardTitle("Orthopyroxene");
         HashMap<String,List<String>> dct =  new HashMap<>();
 
         List<String> lst1 = new ArrayList<>();
@@ -648,7 +650,7 @@ public class STDeck {
         return  dct;
     }
     private HashMap<String, List<String>> CardProperties14(){
-        LCards.get(1).setCardTitle("Chlorite");
+        LCards.get(14).setCardTitle("Chlorite");
         HashMap<String,List<String>> dct =  new HashMap<>();
 
         List<String> lst1 = new ArrayList<>();
@@ -674,7 +676,7 @@ public class STDeck {
         return  dct;
     }
     private HashMap<String, List<String>> CardProperties15(){
-        LCards.get(1).setCardTitle("Antigorite");
+        LCards.get(15).setCardTitle("Antigorite");
         HashMap<String,List<String>> dct =  new HashMap<>();
 
         List<String> lst1 = new ArrayList<>();
@@ -700,7 +702,7 @@ public class STDeck {
         return  dct;
     }
     private HashMap<String, List<String>> CardProperties16(){
-        LCards.get(1).setCardTitle("Talc");
+        LCards.get(16).setCardTitle("Talc");
         HashMap<String,List<String>> dct =  new HashMap<>();
 
         List<String> lst1 = new ArrayList<>();
@@ -726,7 +728,7 @@ public class STDeck {
         return  dct;
     }
     private HashMap<String, List<String>> CardProperties17(){
-        LCards.get(1).setCardTitle("Kaolinite");
+        LCards.get(17).setCardTitle("Kaolinite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -754,7 +756,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties18(){
-        LCards.get(1).setCardTitle("Andalusite");
+        LCards.get(18).setCardTitle("Andalusite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -782,7 +784,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties19(){
-        LCards.get(1).setCardTitle("Kyanite");
+        LCards.get(19).setCardTitle("Kyanite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -810,7 +812,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties20(){
-        LCards.get(1).setCardTitle("Sillimanite");
+        LCards.get(20).setCardTitle("Sillimanite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -838,7 +840,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties21(){
-        LCards.get(1).setCardTitle("Staurolite");
+        LCards.get(21).setCardTitle("Staurolite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -866,7 +868,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties22(){
-        LCards.get(1).setCardTitle("Epidote");
+        LCards.get(22).setCardTitle("Epidote");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -894,7 +896,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties23(){
-        LCards.get(1).setCardTitle("Tourmaline");
+        LCards.get(23).setCardTitle("Tourmaline");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -922,7 +924,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties24(){
-        LCards.get(1).setCardTitle("Topaz");
+        LCards.get(24).setCardTitle("Topaz");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -950,7 +952,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties25(){
-        LCards.get(1).setCardTitle("Beryl");
+        LCards.get(25).setCardTitle("Beryl");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -978,7 +980,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties26(){
-        LCards.get(1).setCardTitle("Pyrite");
+        LCards.get(26).setCardTitle("Pyrite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1006,7 +1008,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties27(){
-        LCards.get(1).setCardTitle("Pyrrhotite");
+        LCards.get(27).setCardTitle("Pyrrhotite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1034,7 +1036,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties28(){
-        LCards.get(1).setCardTitle("Chalcopyrite");
+        LCards.get(28).setCardTitle("Chalcopyrite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1062,7 +1064,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties29(){
-        LCards.get(1).setCardTitle("Galena");
+        LCards.get(29).setCardTitle("Galena");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1090,7 +1092,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties30(){
-        LCards.get(1).setCardTitle("Sphalerite");
+        LCards.get(30).setCardTitle("Sphalerite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1118,7 +1120,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties31(){
-        LCards.get(1).setCardTitle("Molybdenite");
+        LCards.get(31).setCardTitle("Molybdenite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1146,7 +1148,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties32(){
-        LCards.get(1).setCardTitle("Gold");
+        LCards.get(32).setCardTitle("Gold");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1174,7 +1176,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties33(){
-        LCards.get(1).setCardTitle("Diamond");
+        LCards.get(33).setCardTitle("Diamond");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1202,7 +1204,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties34(){
-        LCards.get(1).setCardTitle("Graphite");
+        LCards.get(34).setCardTitle("Graphite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1230,7 +1232,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties35(){
-        LCards.get(1).setCardTitle("Halite");
+        LCards.get(35).setCardTitle("Halite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1258,7 +1260,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties36(){
-        LCards.get(1).setCardTitle("Fluorite");
+        LCards.get(36).setCardTitle("Fluorite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1286,7 +1288,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties37(){
-        LCards.get(1).setCardTitle("Gypsum");
+        LCards.get(37).setCardTitle("Gypsum");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1314,7 +1316,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties38(){
-        LCards.get(1).setCardTitle("Barite");
+        LCards.get(38).setCardTitle("Barite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1342,7 +1344,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties39(){
-        LCards.get(1).setCardTitle("Apatite");
+        LCards.get(39).setCardTitle("Apatite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1370,7 +1372,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties40(){
-        LCards.get(1).setCardTitle("Monazite");
+        LCards.get(40).setCardTitle("Monazite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1398,7 +1400,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties41(){
-        LCards.get(1).setCardTitle("Calcite");
+        LCards.get(41).setCardTitle("Calcite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1426,7 +1428,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties42(){
-        LCards.get(1).setCardTitle("Dolomite");
+        LCards.get(42).setCardTitle("Dolomite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1454,7 +1456,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties43(){
-        LCards.get(1).setCardTitle("Magnesite");
+        LCards.get(43).setCardTitle("Magnesite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1482,7 +1484,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties44(){
-        LCards.get(1).setCardTitle("Siderite");
+        LCards.get(44).setCardTitle("Siderite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1510,7 +1512,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties45(){
-        LCards.get(1).setCardTitle("Magnetite");
+        LCards.get(45).setCardTitle("Magnetite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1538,7 +1540,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties46(){
-        LCards.get(1).setCardTitle("Hematite");
+        LCards.get(46).setCardTitle("Hematite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1566,7 +1568,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties47(){
-        LCards.get(1).setCardTitle("Chromite");
+        LCards.get(47).setCardTitle("Chromite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1594,7 +1596,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties48(){
-        LCards.get(1).setCardTitle("Ilmenite");
+        LCards.get(48).setCardTitle("Ilmenite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1622,7 +1624,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties49(){
-        LCards.get(1).setCardTitle("Rutile");
+        LCards.get(49).setCardTitle("Rutile");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1650,7 +1652,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties50(){
-        LCards.get(1).setCardTitle("Corundum");
+        LCards.get(50).setCardTitle("Corundum");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1678,7 +1680,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties51(){
-        LCards.get(1).setCardTitle("Cassiterite");
+        LCards.get(51).setCardTitle("Cassiterite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1706,7 +1708,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties52(){
-        LCards.get(1).setCardTitle("Gibbsite");
+        LCards.get(52).setCardTitle("Gibbsite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1734,7 +1736,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties53(){
-        LCards.get(1).setCardTitle("Goethite");
+        LCards.get(53).setCardTitle("Goethite");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
