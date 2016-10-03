@@ -19,6 +19,6 @@ public class STCard {
     }
 
     public String toString() {
-        return "\nid="+id+", Title="+title+", Card Type="+type+", Subtitle="+subtitle;
+        return "\nTitle="+title+", Card Type="+type+", Subtitle="+subtitle;
     }
 }

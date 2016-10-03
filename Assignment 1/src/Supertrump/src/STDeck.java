@@ -1,5 +1,6 @@
 import jdk.nashorn.internal.ir.PropertyNode;
 
+import javax.smartcardio.Card;
 import java.util.*;
 
 /**
@@ -7,9 +8,9 @@ import java.util.*;
  */
 public class STDeck {
     private static final int CARDS_LEFT_IN_THE_DECK = 0;
-    private static final int NUMBER_OF_TIMES_TO_SHUFFLE = 500;
     private static final int NUM_OF_PLAYER_CARDS = 54;
     private static final int NUMBER_OF_TRUMP_CARDS = 6;
+    private static final int NUMBER_OF_TIMES_TO_SHUFFLE = 500;
     private List<STCard> cards;
 
 
@@ -78,13 +79,23 @@ public class STDeck {
             cards.add(new STCard(3,"The Mineralogist","T","Cleavage"));
             cards.add(new STCard(4,"The Geophysicist","T","Specific gravity"));
             cards.add(new STCard(5,"The Geologist","T","Change to trumps category of your choice"));
-
         }
         System.out.println(cards);
+        System.out.println("................................");
     }
 
 
     public void ShuffleTheDeck() {
+        Random rnd = new Random();
+        for(int i = 0; i< NUMBER_OF_TIMES_TO_SHUFFLE; i++)
+        {
+            int i1 = rnd.nextInt(60);
+            int i2 = rnd.nextInt(60);
+
+            Collections.swap(cards,i1,i2);
+        }
+        System.out.println("...........................");
+        System.out.println(cards);
     }
 
 }
