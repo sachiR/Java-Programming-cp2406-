@@ -30,12 +30,12 @@ public class STDeck {
 
     public STDeck(){
         for(int i = 0; i<54 ; i++){
-            STCard c = new STCard(i,"P", "Title " + i);
+            STCard c = new STCard(i,"Play", "Title " + i);
             LCards.add(c);
             LoadCardProperties(i);
         }
         for(int i = 0; i<6 ; i++){
-            STCard c = new STCard(i,"T", "Trunp Card " + i);
+            STCard c = new STCard(i,"Trump", "Trunp Card " + i);
             LCards.add(c);
         }
     }
