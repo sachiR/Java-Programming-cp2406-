@@ -46,6 +46,8 @@ public class Main {
 
             switch (opt) { //options in the menu
                 case 1:
+                    STGame.playCard();
+                    STGame.compareCard();
                     break;
                 case 2:
                     //howToPlay();
@@ -55,7 +57,14 @@ public class Main {
                     }
                     break;
                 case 3:
-                    System.out.println(game.drawCardFromDeck());
+                    int np = game.nextPlayerID;
+                    int plid = game.getPlayers().get(np).getPlayerID();
+
+                    STCard c =  game.drawCardFromDeck(plid);
+                    if(c != null){
+                        game.getDeck().printCardAndProperties(c);
+
+                    }
                     System.out.println("");
                     break;
                 case 4:
@@ -71,7 +80,6 @@ public class Main {
 
     private static int getNumOfPlayers() {
         System.out.println("Enter the number of players... (3 to 5)");
-
         int a = getUserMenuChoice(3,5);
         return a;
     }

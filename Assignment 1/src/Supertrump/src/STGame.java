@@ -108,14 +108,23 @@ public class STGame {
         this.lastPlayedCard = lastPlayedCard;
     }
 
-    public static STCard PlayCard() {
-        //STCard c = new STCard();
-        //int cardToPlay = new Random.next(this.players[next]);
+    public static STCard playCard() {
+
         return null;
     }
+    
 
-    public int drawCardFromDeck() {
-        int rnd = new Random().nextInt(this.deck.getCards().size());
-        return rnd;
+    public STCard drawCardFromDeck(int playerID) {
+        STCard c= new STCard();
+        if(this.deck.getCards().size()>0){
+            c = this.deck.getCards().get(0);
+            this.players.get(playerID).getCardsInHand().add(c);
+            this.deck.getCards().remove(0);
+        }
+        return c;
+    }
+
+    public static void compareCard() {
+
     }
 }

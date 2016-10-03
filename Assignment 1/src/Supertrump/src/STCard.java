@@ -24,6 +24,7 @@ public class STCard {
         this._cardProperties = cardProperty;
     }
 
+    public STCard(){}
     public STCard(int cardID, String cardType, String cardTitle){
         this._cardID = cardID;
         this._cardType = cardType;
