@@ -47,12 +47,12 @@ public class Main {
             switch (opt) { //options in the menu
                 case 1:
                     STGame.playCard();
-                    STGame.compareCard();
+                    STCard card = game.compareCard(game.nextPlayerID,game.getLastPlayedCard(),game.comapareCateegory());
                     break;
                 case 2:
                     //howToPlay();
-                    for (STCard card : game.getPlayers().get(0).getCardsInHand()) {
-                        game.getDeck().printCardAndProperties(card);
+                    for (STCard scard : game.getPlayers().get(0).getCardsInHand()){
+                        game.getDeck().printCardAndProperties(scard);
                         System.out.println("");
                     }
                     break;

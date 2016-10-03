@@ -124,7 +124,14 @@ public class STGame {
         return c;
     }
 
-    public static void compareCard() {
+    public STCard compareCard(int playerID,STCard card,String compareCategory) {
+        STCard c = new STCard();
+    //todo: compare the given card to players hand with the given category adn if found return a card other wise pass
+        return c;
 
+    }
+
+    public String comapareCateegory() {
+        return null;
     }
 }
