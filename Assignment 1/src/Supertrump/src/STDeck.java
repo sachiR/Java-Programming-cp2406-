@@ -94,7 +94,7 @@ public class STDeck {
                     s=key;
                 }
                 //System.out.println(key);
-                System.out.println("\t: " + getCards().get(index).getCardProperties().get(key));
+                System.out.println(": " + getCards().get(index).getCardProperties().get(key));
             }
             //System.out.println(getCards().get(i).getCardProperties().get("hardness"));
         }

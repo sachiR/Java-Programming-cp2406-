@@ -11,7 +11,7 @@ public class Main {
         //boolean exitflag = false;
         while (true){
             showMenu();
-            int opt = getUserMenuChoice();
+            int opt = getUserMenuChoice(1,3);
             switch (opt){ //options in the menu
                 case 1:
                     startNewGame();
@@ -36,12 +36,40 @@ public class Main {
         }
 
         game.getDeck().ShuffleTheDeck();
+        //Runtime.getRuntime().exec("cls");
+        while (true){
+            boolean exitflag = false;
+            System.out.println("1.  Play a Card)");
+            System.out.println("2.  Show all Card in my Hand");
+            System.out.println("3.  Draw a Card from the Deck");
+            System.out.println("4.  Exit Current Game");
+            int opt =  getUserMenuChoice(1,4);
+
+            switch (opt){ //options in the menu
+                case 1:
+                    //startNewGame();
+                    break;
+                case 2:
+                    //howToPlay();
+                    break;
+                case 3:
+                    //howToPlay();
+                    break;
+                case 4:
+                    exitflag = true;
+                    break;
+            }
+            if(exitflag){break;}
+        }
         //game.dealCardsToEachPlayer();
     }
 
     private static int getNumOfPlayers() {
         Scanner reader = new Scanner(System.in); // Reading from System.in
         System.out.println("Enter the number of players... (3 to 5)");
+
+        int a = getUserMenuChoice(3,5);
+        /*
         int line = reader.nextInt(); //read the int in new line
         if (line < 3 || line > 5){ //check if the dealer entered is between 3 to 5
             do {System.out.println("Invalid choice please select again between 3 to 5"); //shows error message
@@ -51,6 +79,8 @@ public class Main {
             return line;
         }
         return line;
+        */
+        return a;
     }
 
     private static void howToPlay() {
@@ -100,7 +130,28 @@ public class Main {
         }
         return n;
     }
-
+    private static int getUserMenuChoice(int min, int max) {
+        Scanner reader = new Scanner(System.in); // Reading from System.in
+        String line = reader.nextLine (); // Scans the next token of the input as an int.
+        int n;
+        while (true) {//check if it is true and continue while it is
+            if (line.length () == 1) { // check the line lengt
+                try {
+                    n = Integer.parseInt(line); //change n to a int/
+                    if (n < min || n > max) {
+                        System.out.println("Invalid choice please select again");
+                    } else {
+                        break;
+                    }
+                }
+                catch (NumberFormatException e) { // an exception is thrown
+                    System.out.println(e.getMessage() + " Invalid choice please select again");// print an error message
+                }
+            }
+            line = reader.nextLine (); // read the next line
+        }
+        return n;
+    }
     private static void showMenu() {
         //CLEAR SCREEN ===
         System.out.println("Press 1 to start game"); // shows menu with 3 options
