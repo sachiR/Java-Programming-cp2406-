@@ -17,8 +17,8 @@ public class STGame {
     public STGame(int numOfPlayers, STDeck deck) {
         this.numPlayers = numOfPlayers;
         players = InitialisePlayers();
-        deck = new STDeck();
         SelectDealer();
+        deck = new STDeck();
     }
 
     private void SelectDealer() {
@@ -27,6 +27,7 @@ public class STGame {
         nextPlayerID = this.dealerID;
         changeToNextPlayerID();
         System.out.println("\nRandom dealer is "+nextPlayerID);
+        System.out.println("--------------------------------");
     }
 
     private void changeToNextPlayerID() {

@@ -45,9 +45,8 @@ public class Main {
         int numOfPlayers = getNumOfPlayers();
         STDeck deck = new STDeck();
         STGame game = new STGame(numOfPlayers,deck);
-        deck.cardAndProperties();
-
-        //deck.ShuffleTheDeck();
+        deck.cardAndProperties0();
+        deck.ShuffleTheDeck();
         game.dealCardsToEachPlayer();
     }
 
