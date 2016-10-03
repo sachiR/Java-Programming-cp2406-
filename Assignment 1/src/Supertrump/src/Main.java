@@ -28,7 +28,6 @@ public class Main {
 
     private static void startNewGame() throws ParserConfigurationException, SAXException, IOException {
         int numOfPlayers = getNumOfPlayers();
-        //STDeck deck = new STDeck();
         STGame game = new STGame(numOfPlayers, new STDeck());
         for (int i = 0; i < game.getDeck().getCards().size(); i++) {
             game.getDeck().printCardAndProperties(game.getDeck().getCards().get(i));
@@ -48,7 +47,6 @@ public class Main {
             switch (opt) { //options in the menu
                 case 1:
                     break;
-
                 case 2:
                     //howToPlay();
                     for (STCard card : game.getPlayers().get(0).getCardsInHand()) {
@@ -72,7 +70,6 @@ public class Main {
 
 
     private static int getNumOfPlayers() {
-        Scanner reader = new Scanner(System.in); // Reading from System.in
         System.out.println("Enter the number of players... (3 to 5)");
 
         int a = getUserMenuChoice(3,5);

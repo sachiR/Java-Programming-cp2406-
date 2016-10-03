@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 
 public class STDeck {
-    private static final int CARDS_LEFT_IN_THE_DECK = 0;
     private static final int NUM_OF_PLAYER_CARDS = 54;
     private static final int NUMBER_OF_TRUMP_CARDS = 6;
     private static final int NUMBER_OF_TIMES_TO_SHUFFLE = 500;
@@ -23,7 +22,6 @@ public class STDeck {
         }
         System.out.println("...........................");
     }
-
 
     public List<STCard> getCards(){
         return this.LCards;
@@ -238,12 +236,11 @@ public class STDeck {
     }
 
     public void printCardAndProperties(STCard card) {
-        //int i = 0;
+
         System.out.println("---------------------------------");
         System.out.println("CardID\t\t: "+card.getCardID());
         System.out.println("CardType\t:"+card.getCardType());
-        //s
-        // System.out.println("CardTitle:"+getCards().get(i).getCardTitle());
+
         try {
             HashMap<String,List<String>> dct = card.getCardProperties();
             String s=null;
@@ -1764,7 +1761,7 @@ public class STDeck {
         return  dct;
 
     }
-    //6trump cards
+    //6 trump cards
     private HashMap<String, List<String>> CardProperties54(){
         LCards.get(1).setCardTitle("The Miner");
 

@@ -10,7 +10,7 @@ public class STGame {
     private int lastPlayerID = -1;
     private List<STPlayer> players;
     private STDeck deck;
-    public int drawCardFromDeck;
+
 
     private STCard lastPlayedCard;
 
@@ -20,7 +20,6 @@ public class STGame {
         players = InitialisePlayers();
         this.deck = deck;
         SelectDealer();
-        //deck = new STDeck();
     }
 
     private void SelectDealer() {
