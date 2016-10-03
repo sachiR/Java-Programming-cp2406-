@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class STGame {
     private int numPlayers;
     private int dealerID;
-    private int nextPlayerID;
+    public int nextPlayerID;
     private int lastPlayerID = -1;
     private List<STPlayer> players;
     private STDeck deck;
@@ -33,7 +33,35 @@ public class STGame {
     }
 
     private void changeToNextPlayerID() {
+        nextPlayerID++;
+        if(nextPlayerID >= numPlayers){
+            nextPlayerID = 0;
+        }
     }
+
+    public void DealCardsToEachPlayer(int numberOfCards){
+        int p = GetNextPlayerID(getDealerID());
+        for(int j = 0; j < numPlayers; j++)
+        {
+            List<STCard> c = new ArrayList<STCard>();  // arList<STCard>();
+            for (int i = 0; i < numberOfCards; i++)
+            {
+                c.add(this.deck.getCards().get(i));
+                this.deck.getCards().remove(i);     // .RemoveAt(i);
+            }
+            this.players.get(p).setCardsInHand(c);      // .CardsInHand = c;
+            p = GetNextPlayerID(p);
+        }
+    }
+
+    private int GetNextPlayerID(int p) {
+        p++;
+        if(p >= numPlayers) {
+            p = 0;
+        }
+        return p;
+    }
+
 
     private List<STPlayer> InitialisePlayers() {
         List<STPlayer> players = new ArrayList<STPlayer>();
@@ -77,7 +105,17 @@ public class STGame {
         return lastPlayedCard;
     }
 
+    public void printCardsInHand(int playerid){
+        //for (STCard card : this.players.get(playerid).CardsInHand)
 
+        for(int i = 0; i<this.players.get(playerid).CardsInHand.size(); i++ )
+        {
+            System.out.println(" Card ID \t :" + this.players.get(playerid).getCardsInHand().get(i).getCardID());
+            System.out.println(" Card Title \t :" + this.players.get(playerid).getCardsInHand().get(i).getCardTitle());
+            System.out.println(" Card Type \t :" + this.players.get(playerid).getCardsInHand().get(i).getCardType());
+        }
+
+    }
     public void setLastPlayedCard(STCard lastPlayedCard) {
         this.lastPlayedCard = lastPlayedCard;
     }

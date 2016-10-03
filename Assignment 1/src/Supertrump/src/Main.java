@@ -8,7 +8,6 @@ public class Main {
 
     public static void main(String[] args) throws IOException, SAXException, ParserConfigurationException {
         String userName = showWelcome();//username
-        //boolean exitflag = false;
         while (true){
             showMenu();
             int opt = getUserMenuChoice(1,3);
@@ -36,7 +35,14 @@ public class Main {
         }
 
         game.getDeck().ShuffleTheDeck();
-        //Runtime.getRuntime().exec("cls");
+        game.DealCardsToEachPlayer(8);
+
+        for(int i =0 ; i< game.getNumPlayers(); i++){
+            System.out.println("=======Player ID = " + i + "============");
+            game.printCardsInHand(i);
+        }
+
+
         while (true){
             boolean exitflag = false;
             System.out.println("1.  Play a Card)");
@@ -47,7 +53,7 @@ public class Main {
 
             switch (opt){ //options in the menu
                 case 1:
-                    //startNewGame();
+                    System.out.println("4.  Exit Current Game");
                     break;
                 case 2:
                     //howToPlay();
@@ -69,17 +75,6 @@ public class Main {
         System.out.println("Enter the number of players... (3 to 5)");
 
         int a = getUserMenuChoice(3,5);
-        /*
-        int line = reader.nextInt(); //read the int in new line
-        if (line < 3 || line > 5){ //check if the dealer entered is between 3 to 5
-            do {System.out.println("Invalid choice please select again between 3 to 5"); //shows error message
-                line = reader.nextInt();} //read the int in new line
-            while (line < 3 || line > 5 );//check if the dealer entered is between 3 to 5 and continue while it is not
-        } else {
-            return line;
-        }
-        return line;
-        */
         return a;
     }
 
@@ -107,29 +102,6 @@ public class Main {
                 "7. The winner of the game is the first player to lose all of their cards. The game continue until all but one player has lost their cards.\n\n ");
     }
 
-
-    private static int getUserMenuChoice() {
-        Scanner reader = new Scanner(System.in); // Reading from System.in
-        String line = reader.nextLine (); // Scans the next token of the input as an int.
-        int n;
-        while (true) {//check if it is true and continue while it is
-            if (line.length () == 1) { // check the line lengt
-                try {
-                    n = Integer.parseInt(line); //change n to a int/
-                    if (n <= 0 || n > 3) {
-                        System.out.println("Invalid choice please select again");
-                    } else {
-                        break;
-                    }
-                }
-                catch (NumberFormatException e) { // an exception is thrown
-                    System.out.println(e.getMessage() + " Invalid choice please select again");// print an error message
-                }
-            }
-            line = reader.nextLine (); // read the next line
-        }
-        return n;
-    }
     private static int getUserMenuChoice(int min, int max) {
         Scanner reader = new Scanner(System.in); // Reading from System.in
         String line = reader.nextLine (); // Scans the next token of the input as an int.

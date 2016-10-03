@@ -27,8 +27,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+            <state relative-caret-position="289">
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#main#0;class#Main#0" expanded="false" />
@@ -45,31 +45,29 @@
       <file leaf-file-name="STGame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/STGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="34" column="37" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="37" />
+            <state relative-caret-position="325">
+              <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
               <folding>
-                <element signature="e#1805#1806#0" expanded="true" />
-                <element signature="e#1837#1838#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1239#1247#0" expanded="true" />
+                <element signature="method#InitialisePlayers#0;class#STGame#0" expanded="false" />
+                <element signature="e#2155#2156#0" expanded="true" />
+                <element signature="e#2188#2189#0" expanded="true" />
+                <element signature="e#2220#2221#0" expanded="true" />
+                <element signature="e#2251#2252#0" expanded="true" />
+                <element signature="e#2510#2511#0" expanded="true" />
+                <element signature="e#2542#2543#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="STPlayer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/STPlayer.java">
+      <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/util/ArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-              <folding>
-                <element signature="e#341#342#0" expanded="false" />
-                <element signature="e#375#376#0" expanded="false" />
-                <element signature="e#435#436#0" expanded="false" />
-                <element signature="e#481#482#0" expanded="false" />
-                <element signature="e#513#514#0" expanded="false" />
-                <element signature="e#544#545#0" expanded="false" />
-                <element signature="e#589#590#0" expanded="false" />
-                <element signature="e#629#630#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="193">
+              <caret line="428" column="0" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -77,11 +75,13 @@
       <file leaf-file-name="STDeck.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/STDeck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+            <state relative-caret-position="193">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#400#408#0" expanded="true" />
                 <element signature="method#ShuffleTheDeck#0;class#STDeck#0" expanded="false" />
+                <element signature="e#819#820#0" expanded="true" />
                 <element signature="method#CardProperties0#0;class#STDeck#0" expanded="false" />
                 <element signature="method#CardProperties1#0;class#STDeck#0" expanded="false" />
                 <element signature="method#CardProperties2#0;class#STDeck#0" expanded="false" />
@@ -135,12 +135,26 @@
                 <element signature="method#CardProperties57#0;class#STDeck#0" expanded="false" />
                 <element signature="method#CardProperties58#0;class#STDeck#0" expanded="false" />
                 <element signature="method#CardProperties59#0;class#STDeck#0" expanded="false" />
-                <marker date="1475496000441" expanded="false" signature="15029:15740" ph="{...}" />
-                <marker date="1475496000441" expanded="false" signature="15801:16506" ph="{...}" />
-                <marker date="1475496000441" expanded="false" signature="16567:17275" ph="{...}" />
-                <marker date="1475496000441" expanded="false" signature="17336:18046" ph="{...}" />
-                <marker date="1475496000441" expanded="false" signature="18107:18820" ph="{...}" />
-                <marker date="1475496000441" expanded="false" signature="20420:21125" ph="{...}" />
+                <marker date="1475498764916" expanded="false" signature="15030:15741" ph="{...}" />
+                <marker date="1475498764916" expanded="false" signature="15802:16507" ph="{...}" />
+                <marker date="1475498764916" expanded="false" signature="16568:17276" ph="{...}" />
+                <marker date="1475498764916" expanded="false" signature="17337:18047" ph="{...}" />
+                <marker date="1475498764916" expanded="false" signature="18108:18821" ph="{...}" />
+                <marker date="1475498764916" expanded="false" signature="20421:21126" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="STPlayer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/STPlayer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding>
+                <element signature="e#257#258#0" expanded="true" />
+                <element signature="e#297#298#0" expanded="true" />
+                <element signature="e#435#436#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -177,9 +191,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="676" />
-    <option name="width" value="697" />
-    <option name="height" value="735" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -493,8 +508,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="676" y="0" width="697" height="735" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -504,7 +519,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45741326" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44637224" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -512,7 +527,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.39432177" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" x="8" y="130" width="1350" height="270" />
+      <window_info id="Debug" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" show_stripe_button="true" weight="0.39432177" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" x="616" y="98" width="711" height="290" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -537,13 +552,37 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/STDeck.java</url>
-          <line>1767</line>
+          <url>file://$PROJECT_DIR$/src/STGame.java</url>
+          <line>108</line>
           <properties />
-          <option name="timeStamp" value="15" />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/STGame.java</url>
+          <line>110</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/STGame.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/STGame.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="17" />
+      <option name="time" value="30" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -573,14 +612,9 @@
         <state relative-caret-position="187">
           <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
           <folding>
-            <element signature="e#341#342#0" expanded="false" />
-            <element signature="e#375#376#0" expanded="false" />
-            <element signature="e#435#436#0" expanded="false" />
-            <element signature="e#481#482#0" expanded="false" />
-            <element signature="e#513#514#0" expanded="false" />
-            <element signature="e#544#545#0" expanded="false" />
-            <element signature="e#589#590#0" expanded="false" />
-            <element signature="e#629#630#0" expanded="false" />
+            <element signature="e#257#258#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -591,7 +625,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#400#408#0" expanded="true" />
             <element signature="method#ShuffleTheDeck#0;class#STDeck#0" expanded="false" />
+            <element signature="e#819#820#0" expanded="true" />
             <element signature="method#CardProperties0#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties1#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties2#0;class#STDeck#0" expanded="false" />
@@ -645,12 +681,12 @@
             <element signature="method#CardProperties57#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties58#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties59#0;class#STDeck#0" expanded="false" />
-            <marker date="1475496000441" expanded="false" signature="15029:15740" ph="{...}" />
-            <marker date="1475496000441" expanded="false" signature="15801:16506" ph="{...}" />
-            <marker date="1475496000441" expanded="false" signature="16567:17275" ph="{...}" />
-            <marker date="1475496000441" expanded="false" signature="17336:18046" ph="{...}" />
-            <marker date="1475496000441" expanded="false" signature="18107:18820" ph="{...}" />
-            <marker date="1475496000441" expanded="false" signature="20420:21125" ph="{...}" />
+            <marker date="1475498764916" expanded="false" signature="15030:15741" ph="{...}" />
+            <marker date="1475498764916" expanded="false" signature="15802:16507" ph="{...}" />
+            <marker date="1475498764916" expanded="false" signature="16568:17276" ph="{...}" />
+            <marker date="1475498764916" expanded="false" signature="17337:18047" ph="{...}" />
+            <marker date="1475498764916" expanded="false" signature="18108:18821" ph="{...}" />
+            <marker date="1475498764916" expanded="false" signature="20421:21126" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -670,8 +706,15 @@
         <state relative-caret-position="969">
           <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding>
-            <element signature="e#1805#1806#0" expanded="true" />
-            <element signature="e#1837#1838#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1239#1247#0" expanded="true" />
+            <element signature="method#InitialisePlayers#0;class#STGame#0" expanded="false" />
+            <element signature="e#2155#2156#0" expanded="true" />
+            <element signature="e#2188#2189#0" expanded="true" />
+            <element signature="e#2220#2221#0" expanded="true" />
+            <element signature="e#2251#2252#0" expanded="true" />
+            <element signature="e#2510#2511#0" expanded="true" />
+            <element signature="e#2542#2543#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -697,8 +740,15 @@
         <state relative-caret-position="561">
           <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
           <folding>
-            <element signature="e#1805#1806#0" expanded="true" />
-            <element signature="e#1837#1838#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1239#1247#0" expanded="true" />
+            <element signature="method#InitialisePlayers#0;class#STGame#0" expanded="false" />
+            <element signature="e#2155#2156#0" expanded="true" />
+            <element signature="e#2188#2189#0" expanded="true" />
+            <element signature="e#2220#2221#0" expanded="true" />
+            <element signature="e#2251#2252#0" expanded="true" />
+            <element signature="e#2510#2511#0" expanded="true" />
+            <element signature="e#2542#2543#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -708,14 +758,9 @@
         <state relative-caret-position="85">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
-            <element signature="e#341#342#0" expanded="false" />
-            <element signature="e#375#376#0" expanded="false" />
-            <element signature="e#435#436#0" expanded="false" />
-            <element signature="e#481#482#0" expanded="false" />
-            <element signature="e#513#514#0" expanded="false" />
-            <element signature="e#544#545#0" expanded="false" />
-            <element signature="e#589#590#0" expanded="false" />
-            <element signature="e#629#630#0" expanded="false" />
+            <element signature="e#257#258#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -736,7 +781,9 @@
           <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#400#408#0" expanded="true" />
             <element signature="method#ShuffleTheDeck#0;class#STDeck#0" expanded="false" />
+            <element signature="e#819#820#0" expanded="true" />
             <element signature="method#CardProperties0#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties1#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties2#0;class#STDeck#0" expanded="false" />
@@ -790,12 +837,12 @@
             <element signature="method#CardProperties57#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties58#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties59#0;class#STDeck#0" expanded="false" />
-            <marker date="1475496000441" expanded="false" signature="15029:15740" ph="{...}" />
-            <marker date="1475496000441" expanded="false" signature="15801:16506" ph="{...}" />
-            <marker date="1475496000441" expanded="false" signature="16567:17275" ph="{...}" />
-            <marker date="1475496000441" expanded="false" signature="17336:18046" ph="{...}" />
-            <marker date="1475496000441" expanded="false" signature="18107:18820" ph="{...}" />
-            <marker date="1475496000441" expanded="false" signature="20420:21125" ph="{...}" />
+            <marker date="1475498764916" expanded="false" signature="15030:15741" ph="{...}" />
+            <marker date="1475498764916" expanded="false" signature="15802:16507" ph="{...}" />
+            <marker date="1475498764916" expanded="false" signature="16568:17276" ph="{...}" />
+            <marker date="1475498764916" expanded="false" signature="17337:18047" ph="{...}" />
+            <marker date="1475498764916" expanded="false" signature="18108:18821" ph="{...}" />
+            <marker date="1475498764916" expanded="false" signature="20421:21126" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -805,31 +852,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="652" column="0" selection-start-line="652" selection-start-column="0" selection-end-line="652" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/STPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="e#341#342#0" expanded="false" />
-            <element signature="e#375#376#0" expanded="false" />
-            <element signature="e#435#436#0" expanded="false" />
-            <element signature="e#481#482#0" expanded="false" />
-            <element signature="e#513#514#0" expanded="false" />
-            <element signature="e#544#545#0" expanded="false" />
-            <element signature="e#589#590#0" expanded="false" />
-            <element signature="e#629#630#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -851,13 +873,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="428" column="0" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/STDeck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+        <state relative-caret-position="193">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#400#408#0" expanded="true" />
             <element signature="method#ShuffleTheDeck#0;class#STDeck#0" expanded="false" />
+            <element signature="e#819#820#0" expanded="true" />
             <element signature="method#CardProperties0#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties1#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties2#0;class#STDeck#0" expanded="false" />
@@ -911,20 +943,32 @@
             <element signature="method#CardProperties57#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties58#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties59#0;class#STDeck#0" expanded="false" />
-            <marker date="1475496000441" expanded="false" signature="15029:15740" ph="{...}" />
-            <marker date="1475496000441" expanded="false" signature="15801:16506" ph="{...}" />
-            <marker date="1475496000441" expanded="false" signature="16567:17275" ph="{...}" />
-            <marker date="1475496000441" expanded="false" signature="17336:18046" ph="{...}" />
-            <marker date="1475496000441" expanded="false" signature="18107:18820" ph="{...}" />
-            <marker date="1475496000441" expanded="false" signature="20420:21125" ph="{...}" />
+            <marker date="1475498764916" expanded="false" signature="15030:15741" ph="{...}" />
+            <marker date="1475498764916" expanded="false" signature="15802:16507" ph="{...}" />
+            <marker date="1475498764916" expanded="false" signature="16568:17276" ph="{...}" />
+            <marker date="1475498764916" expanded="false" signature="17337:18047" ph="{...}" />
+            <marker date="1475498764916" expanded="false" signature="18108:18821" ph="{...}" />
+            <marker date="1475498764916" expanded="false" signature="20421:21126" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/STPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#257#258#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        <state relative-caret-position="289">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#main#0;class#Main#0" expanded="false" />
@@ -939,11 +983,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/STGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="34" column="37" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="37" />
+        <state relative-caret-position="325">
+          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
           <folding>
-            <element signature="e#1805#1806#0" expanded="true" />
-            <element signature="e#1837#1838#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1239#1247#0" expanded="true" />
+            <element signature="method#InitialisePlayers#0;class#STGame#0" expanded="false" />
+            <element signature="e#2155#2156#0" expanded="true" />
+            <element signature="e#2188#2189#0" expanded="true" />
+            <element signature="e#2220#2221#0" expanded="true" />
+            <element signature="e#2251#2252#0" expanded="true" />
+            <element signature="e#2510#2511#0" expanded="true" />
+            <element signature="e#2542#2543#0" expanded="true" />
           </folding>
         </state>
       </provider>

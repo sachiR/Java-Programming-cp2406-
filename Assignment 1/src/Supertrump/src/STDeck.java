@@ -11,6 +11,7 @@ public class STDeck {
     private static final int NUMBER_OF_TIMES_TO_SHUFFLE = 500;
     private List<STCard> LCards = new ArrayList<STCard>();
 
+
     public void ShuffleTheDeck() {
         Random rnd = new Random();
         for(int i = 0; i< NUMBER_OF_TIMES_TO_SHUFFLE; i++)
