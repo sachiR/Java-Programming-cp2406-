@@ -37,29 +37,29 @@ public class STDeck {
         for (int i = 0; i < 6; i++) {
             STCard c = new STCard(i, "Trump", "Trunp Card " + i);
             LCards.add(c);
-            LoadTrumpCardProperties(i);
+            LoadTrumpCardProperties(i+NUM_OF_PLAYER_CARDS);
         }
     }
 
     private void LoadTrumpCardProperties(int index) {
         HashMap<String, List<String>> cp = new HashMap<String, List<String>>();
         switch (index){
-            case 0:
+            case 54:
                 cp = CardProperties54();
                 break;
-            case 1:
+            case 55:
                 cp = CardProperties55();
                 break;
-            case 2:
+            case 56:
                 cp = CardProperties56();
                 break;
-            case 3:
+            case 57:
                 cp = CardProperties57();
                 break;
-            case 4:
+            case 58:
                 cp = CardProperties58();
                 break;
-            case 5:
+            case 59:
                 cp = CardProperties59();
                 break;
         }
