@@ -1,8 +1,12 @@
+import org.xml.sax.SAXException;
+
+import javax.xml.parsers.ParserConfigurationException;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, SAXException, ParserConfigurationException {
         String userName = showWelcome();//username
         showMenu();
         int opt = getUserMenuChoice();
@@ -20,7 +24,7 @@ public class Main {
         }
     }
 
-    private static void repeatMenuSwitch() {
+    private static void repeatMenuSwitch() throws IOException, SAXException, ParserConfigurationException {
         showMenu();
         int opt = getUserMenuChoice();
         switch (opt){ //options in the menu
@@ -37,12 +41,13 @@ public class Main {
         }
     }
 
-    private static void startNewGame() {
+    private static void startNewGame() throws ParserConfigurationException, SAXException, IOException {
         int numOfPlayers = getNumOfPlayers();
         STDeck deck = new STDeck();
         STGame game = new STGame(numOfPlayers,deck);
-        deck.ShuffleTheDeck();
         deck.cardAndProperties();
+
+        //deck.ShuffleTheDeck();
         game.dealCardsToEachPlayer();
     }
 

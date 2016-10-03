@@ -1,3 +1,8 @@
+import org.w3c.dom.Document;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import java.io.File;
 import java.util.*;
 
 /**
@@ -21,31 +26,22 @@ public class STDeck {
             STCard c = new STCard(i,"T", "Trump Card " + i);
             LCards.add(c);
         }
-        CardProperties(5);
+        CardProperties();
     }
 
-    private void CardProperties(int cardIndex) {
-        HashMap<String,List<String>> dct =  new HashMap<>();
-        List<String> lst1 = new ArrayList<>();
-        lst1.add("7");
-        dct.put("hardness",lst1);
+    private void CardProperties() {
+        HashMap<String, List<String>> dct = new HashMap<>();
+        try{
+            File fXmlFile = new File("C:\\Users\\Sachini\\Documents\\GitHub\\Java-Programming-cp2406-\\Assignment 1\\src\\Supertrump\\src\\MstCards_151021.xml");
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+            Document doc = dBuilder.parse(fXmlFile);
 
-        List<String> lst2 = new ArrayList<>();
-        lst2.add("2.65");
-        dct.put("specific_gravity",lst2);
+        } catch (Exception e){
+            e.printStackTrace();
+        }
 
-        List<String> lst3 = new ArrayList<>();
-        lst3.add("poor/none");
-        dct.put("cleavage",lst3);
-
-        List<String> lst4 = new ArrayList<>();
-        lst4.add("igneous");
-        lst4.add("metamorphic");
-        lst4.add("sedimentary");
-
-        dct.put("occurrence",lst4);
-
-        this.LCards.get(cardIndex).setCardProperties(dct);
+        //this.LCards.get(cardIndex).setCardProperties(dct);
     }
 
 
@@ -63,18 +59,18 @@ public class STDeck {
     }
 
     public void cardAndProperties() {
-        int i = 5;
-        System.out.println(getCards().get(i).getCardID());
-        System.out.println(getCards().get(i).getCardType());
-        System.out.println(getCards().get(i).getCardTitle());
+        int cardIndex = 5;
+        System.out.println(getCards().get(cardIndex).getCardID());
+        System.out.println(getCards().get(cardIndex).getCardType());
+        System.out.println(getCards().get(cardIndex).getCardTitle());
         try {
-            HashMap<String,List<String>> dct = getCards().get(i).getCardProperties();
+            HashMap<String,List<String>> dct = getCards().get(cardIndex).getCardProperties();
             for (String key : dct.keySet())
             {
                 System.out.println(key);
-                System.out.println(getCards().get(i).getCardProperties().get(key));
+                System.out.println(getCards().get(cardIndex).getCardProperties().get(key));
             }
-            System.out.println(getCards().get(i).getCardProperties().get("hardness"));
+            System.out.println(getCards().get(cardIndex).getCardProperties().get("hardness"));
         }
         catch (Exception e){
             System.out.println("No Properties");

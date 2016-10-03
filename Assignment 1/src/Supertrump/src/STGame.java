@@ -38,6 +38,7 @@ public class STGame {
             STPlayer p = new STPlayer(i);
             players.add(p);
         }
+        System.out.println();
         return players;
     }
 
