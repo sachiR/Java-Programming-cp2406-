@@ -30,7 +30,7 @@ public class Main {
         int numOfPlayers = getNumOfPlayers();
         STGame game = new STGame(numOfPlayers, new STDeck());
         for (int i = 0; i < game.getDeck().getCards().size(); i++) {
-            game.getDeck().printCardAndProperties(game.getDeck().getCards().get(i));
+            game.getDeck().printCardAndProperties(game.getDeck().getCards().get(i), game.getPlayCategory());
         }
 
         game.getDeck().ShuffleTheDeck();
@@ -42,39 +42,50 @@ public class Main {
             if (game.nextPlayerID == 0){
                 System.out.println("1.  Play a Card");
                 System.out.println("2.  Show all Card in my Hand");
+                System.out.println("3.  Show last played card");
                 System.out.println("3.  Draw a Card from the Deck");
                 System.out.println("4.  Exit Current Game");
             } else{
                 System.out.println("1.  Play the Next players card");
             }
 
-            int opt = getUserMenuChoice(1, 4);
+            int opt = getUserMenuChoice(1, 5);
 
             switch (opt) { //options in the menu
                 case 1:
                     game.playCard(game.nextPlayerID);
+
+                    game.getDeck().printCardAndProperties(game.getLastPlayedCard(),game.getPlayCategory());
+                    System.out.println("-------------");
                     game.printNextPlayer();
-                    STCard card = game.compareCard(game.nextPlayerID,game.getLastPlayedCard(),game.comapareCategory());
+                    //STCard card = game.compareCard(game.nextPlayerID,game.getLastPlayedCard(),game.comapareCategory());
                     break;
                 case 2:
                     //ShowAllCardsInHand();
                     for (STCard scard : game.getPlayers().get(0).getCardsInHand()){
-                        game.getDeck().printCardAndProperties(scard);
+                        game.getDeck().printCardAndProperties(scard,game.getPlayCategory());
                         System.out.println("");
                     }
                     break;
                 case 3:
+                    game.getDeck().printCardAndProperties(game.getLastPlayedCard()); // .getLastPlayedCard(game.getLastPlayedCard());
+                    /*
+                    if (lastCard != null){
+                        System.out.println(lastCard);
+                    }
+                    */
+                case 4:
                     int np = game.nextPlayerID;
                     int plid = game.getPlayers().get(np).getPlayerID();
 
                     STCard c =  game.drawCardFromDeck(plid);
                     if(c != null){
-                        game.getDeck().printCardAndProperties(c);
+                        game.getDeck().printCardAndProperties(c,game.getPlayCategory());
 
                     }
                     System.out.println("");
                     break;
-                case 4:
+                case 5:
                     exitFlag = true;
                     break;
             }

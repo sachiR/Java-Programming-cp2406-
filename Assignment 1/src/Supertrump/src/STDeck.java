@@ -236,11 +236,17 @@ public class STDeck {
     }
 
     public void printCardAndProperties(STCard card) {
-
+        System.out.println("---------------------------------");
+        if(card==null){
+            System.out.println("NOTHING TO PRINT");
+            return;
+        }
         System.out.println("---------------------------------");
         System.out.println("CardID\t\t: "+card.getCardID());
         System.out.println("CardTitle\t: "+card.getCardTitle());
-        System.out.println("CardType\t:"+card.getCardType());
+        System.out.println("CardType\t:"+ card.getCardType());
+        System.out.println("---------------------------------");
+
 
         try {
             HashMap<String,List<String>> dct = card.getCardProperties();
@@ -260,6 +266,13 @@ public class STDeck {
         catch (Exception e){
             System.out.println("No Properties");
         }
+    }
+    public void printCardAndProperties(STCard card, STCard.enumPlayingCategory cat) {
+
+        this.printCardAndProperties(card);
+        if(card==null){return;}
+        System.out.println("---------------------------------");
+        System.out.println("Play Category\t:" + ((cat != null) ? cat : "No Selected Category"));
     }
 
 

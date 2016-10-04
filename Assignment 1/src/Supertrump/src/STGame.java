@@ -5,6 +5,7 @@ import java.util.Random;
 
 
 public class STGame {
+    private STCard.enumPlayingCategory playCategory;
     private int numPlayers;
     private int dealerID;
     public int nextPlayerID;
@@ -45,15 +46,14 @@ public class STGame {
     }
     public void printNextPlayer(){
         System.out.println("\nNext Player is "+nextPlayerID);
-
         System.out.println("--------------------------------");
     }
 
-    private void changeToPlayerID(int dealerID) {
-        dealerID++;
-        if(dealerID >= numPlayers){
-            dealerID = 0;
-        }
+    public STCard.enumPlayingCategory getPlayCategory() {
+        return playCategory;
+    }
+    public void setPlayCategory(STCard.enumPlayingCategory playCategory) {
+        this.playCategory = playCategory;
     }
 
     public void DealCardsToEachPlayer(int numberOfCards){
@@ -119,25 +119,55 @@ public class STGame {
 
     public STCard playCard(int nextPlayerID) {
         HashMap<String, List<String>> cp = new HashMap<>();
-        if (getLastPlayedCard() == null ){
-            for (STCard card: this.getPlayers().get(nextPlayerID).getCardsInHand()) {
-                if(card.getCardType().equalsIgnoreCase("Play")&&(nextPlayerID!=0)){
-                    System.out.println("CardID\t\t: "+card.getCardID());
-                    System.out.println("CardTitle\t: "+card.getCardTitle());
-                    System.out.println("CardType\t: "+card.getCardType());
-                    System.out.println();
-                    cp = card.getCardProperties();
+        STCard playCard = new STCard();
+        int selectedCardID = 0;  //, j;
 
+        if (getLastPlayedCard() == null ) {
+            //j=0;
+            for (STCard card : this.getPlayers().get(nextPlayerID).getCardsInHand()) {
+                if (card.getCardType().equalsIgnoreCase("Play")) {
+                    /*
+                    System.out.println("CardID\t\t: " + card.getCardID());
+                    System.out.println("CardTitle\t: " + card.getCardTitle());
+                    System.out.println("CardType\t: " + card.getCardType());
+                    System.out.println();
+
+                    cp = card.getCardProperties();
+                    */
                     //--- Generate Random number to find playig Category 0 - 5
                     int rnd = new Random().nextInt(5);
                     String st = STCard.enumPlayingCategory.values()[rnd].toString();
-                    System.out.println(cp.containsKey(st));
-                    System.out.println("---------------------------");
-                    return card;
+                    this.setPlayCategory(STCard.enumPlayingCategory.values()[rnd]);
+                    //System.out.println(cp.containsKey(st));
+                    //System.out.println("---------------------------");
+                    playCard = card;
+                    break;
                 }
+                selectedCardID++;
+            }
+        } else {
+            //Compare played card with cards in hand
+            //Get the List of all possibles cards
+            //if(Possible List == 0){
+            // get a card from the Deck
+            // Last played card doesnt change
+            // return
+            //}
+
+            if(nextPlayerID == 0 ) {
+                //Manually Select a Card from the List
+                //playCard = selected card;
+            } else {
+                //Select Random card from the possible list
+                //playCard = selected card;
             }
         }
-        return null;
+        this.getPlayers().get(nextPlayerID).getCardsInHand().remove(selectedCardID);
+        setLastPlayedCard(playCard);
+
+        nextPlayerID = GetNextPlayerID(nextPlayerID);
+
+        return playCard;
     }
 
     public STCard drawCardFromDeck(int playerID) {
@@ -159,4 +189,7 @@ public class STGame {
     public String comapareCategory() {
         return null;
     }
+
+
+
 }
