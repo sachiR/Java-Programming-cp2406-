@@ -239,6 +239,7 @@ public class STDeck {
         System.out.println("---------------------------------");
         if(card==null){
             System.out.println("NOTHING TO PRINT");
+            System.out.println("---------------------------------");
             return;
         }
         System.out.println("---------------------------------");

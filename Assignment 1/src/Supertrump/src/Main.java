@@ -69,6 +69,7 @@ public class Main {
                     break;
                 case 3:
                     game.getDeck().printCardAndProperties(game.getLastPlayedCard()); // .getLastPlayedCard(game.getLastPlayedCard());
+                    break;
                     /*
                     if (lastCard != null){
                         System.out.println(lastCard);
