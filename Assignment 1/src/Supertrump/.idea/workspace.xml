@@ -27,16 +27,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="65" column="92" selection-start-line="65" selection-start-column="92" selection-end-line="65" selection-end-column="92" />
+            <state relative-caret-position="299">
+              <caret line="71" column="35" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#main#0;class#Main#0" expanded="false" />
                 <element signature="method#getUserMenuChoice#0;class#Main#0" expanded="false" />
-                <element signature="method#showMenu#0;class#Main#0" expanded="false" />
                 <element signature="method#showWelcome#0;class#Main#0" expanded="false" />
               </folding>
             </state>
@@ -46,10 +45,11 @@
       <file leaf-file-name="STGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/STGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+            <state relative-caret-position="588">
+              <caret line="149" column="49" selection-start-line="149" selection-start-column="49" selection-end-line="149" selection-end-column="49" />
               <folding>
                 <element signature="method#STGame#0;class#STGame#0" expanded="false" />
+                <element signature="method#SelectDealer#0;class#STGame#0" expanded="false" />
                 <element signature="e#1478#1479#0" expanded="true" />
                 <element signature="e#1513#1514#0" expanded="true" />
                 <element signature="e#1588#1589#0" expanded="true" />
@@ -59,6 +59,7 @@
                 <element signature="e#2942#2943#0" expanded="true" />
                 <element signature="e#2973#2974#0" expanded="true" />
                 <element signature="e#3005#3006#0" expanded="true" />
+                <element signature="e#3046#3047#0" expanded="true" />
                 <element signature="e#3083#3084#0" expanded="true" />
                 <element signature="e#3143#3144#0" expanded="true" />
                 <element signature="e#3195#3196#0" expanded="true" />
@@ -71,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="STDeck.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="STDeck.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/STDeck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="241" column="68" selection-start-line="241" selection-start-column="68" selection-end-line="241" selection-end-column="68" />
+            <state relative-caret-position="448">
+              <caret line="273" column="31" selection-start-line="273" selection-start-column="31" selection-end-line="273" selection-end-column="31" />
               <folding>
                 <element signature="e#343#351#0" expanded="true" />
                 <element signature="method#ShuffleTheDeck#0;class#STDeck#0" expanded="false" />
@@ -199,9 +200,9 @@
         <option value="$PROJECT_DIR$/src/STPlayer.java" />
         <option value="$PROJECT_DIR$/src/game/NextPlayerID.java" />
         <option value="$PROJECT_DIR$/src/STCard.java" />
-        <option value="$PROJECT_DIR$/src/STGame.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/STDeck.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/STGame.java" />
       </list>
     </option>
   </component>
@@ -528,8 +529,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -539,7 +540,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.56782335" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.56782335" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -570,15 +571,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>70</line>
-          <properties />
-          <option name="timeStamp" value="71" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="72" />
+      <option name="time" value="73" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -595,7 +588,6 @@
             <element signature="imports" expanded="true" />
             <element signature="method#main#0;class#Main#0" expanded="false" />
             <element signature="method#getUserMenuChoice#0;class#Main#0" expanded="false" />
-            <element signature="method#showMenu#0;class#Main#0" expanded="false" />
             <element signature="method#showWelcome#0;class#Main#0" expanded="false" />
           </folding>
         </state>
@@ -607,6 +599,7 @@
           <caret line="110" column="36" selection-start-line="110" selection-start-column="36" selection-end-line="110" selection-end-column="36" />
           <folding>
             <element signature="method#STGame#0;class#STGame#0" expanded="false" />
+            <element signature="method#SelectDealer#0;class#STGame#0" expanded="false" />
             <element signature="e#1478#1479#0" expanded="true" />
             <element signature="e#1513#1514#0" expanded="true" />
             <element signature="e#1588#1589#0" expanded="true" />
@@ -616,6 +609,7 @@
             <element signature="e#2942#2943#0" expanded="true" />
             <element signature="e#2973#2974#0" expanded="true" />
             <element signature="e#3005#3006#0" expanded="true" />
+            <element signature="e#3046#3047#0" expanded="true" />
             <element signature="e#3083#3084#0" expanded="true" />
             <element signature="e#3143#3144#0" expanded="true" />
             <element signature="e#3195#3196#0" expanded="true" />
@@ -740,7 +734,6 @@
             <element signature="imports" expanded="true" />
             <element signature="method#main#0;class#Main#0" expanded="false" />
             <element signature="method#getUserMenuChoice#0;class#Main#0" expanded="false" />
-            <element signature="method#showMenu#0;class#Main#0" expanded="false" />
             <element signature="method#showWelcome#0;class#Main#0" expanded="false" />
           </folding>
         </state>
@@ -752,6 +745,7 @@
           <caret line="119" column="19" selection-start-line="119" selection-start-column="19" selection-end-line="119" selection-end-column="19" />
           <folding>
             <element signature="method#STGame#0;class#STGame#0" expanded="false" />
+            <element signature="method#SelectDealer#0;class#STGame#0" expanded="false" />
             <element signature="e#1478#1479#0" expanded="true" />
             <element signature="e#1513#1514#0" expanded="true" />
             <element signature="e#1588#1589#0" expanded="true" />
@@ -761,6 +755,7 @@
             <element signature="e#2942#2943#0" expanded="true" />
             <element signature="e#2973#2974#0" expanded="true" />
             <element signature="e#3005#3006#0" expanded="true" />
+            <element signature="e#3046#3047#0" expanded="true" />
             <element signature="e#3083#3084#0" expanded="true" />
             <element signature="e#3143#3144#0" expanded="true" />
             <element signature="e#3195#3196#0" expanded="true" />
@@ -885,7 +880,6 @@
             <element signature="imports" expanded="true" />
             <element signature="method#main#0;class#Main#0" expanded="false" />
             <element signature="method#getUserMenuChoice#0;class#Main#0" expanded="false" />
-            <element signature="method#showMenu#0;class#Main#0" expanded="false" />
             <element signature="method#showWelcome#0;class#Main#0" expanded="false" />
           </folding>
         </state>
@@ -1002,6 +996,7 @@
           <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding>
             <element signature="method#STGame#0;class#STGame#0" expanded="false" />
+            <element signature="method#SelectDealer#0;class#STGame#0" expanded="false" />
             <element signature="e#1478#1479#0" expanded="true" />
             <element signature="e#1513#1514#0" expanded="true" />
             <element signature="e#1588#1589#0" expanded="true" />
@@ -1011,6 +1006,7 @@
             <element signature="e#2942#2943#0" expanded="true" />
             <element signature="e#2973#2974#0" expanded="true" />
             <element signature="e#3005#3006#0" expanded="true" />
+            <element signature="e#3046#3047#0" expanded="true" />
             <element signature="e#3083#3084#0" expanded="true" />
             <element signature="e#3143#3144#0" expanded="true" />
             <element signature="e#3195#3196#0" expanded="true" />
@@ -1030,7 +1026,6 @@
             <element signature="imports" expanded="true" />
             <element signature="method#main#0;class#Main#0" expanded="false" />
             <element signature="method#getUserMenuChoice#0;class#Main#0" expanded="false" />
-            <element signature="method#showMenu#0;class#Main#0" expanded="false" />
             <element signature="method#showWelcome#0;class#Main#0" expanded="false" />
           </folding>
         </state>
@@ -1042,6 +1037,7 @@
           <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
           <folding>
             <element signature="method#STGame#0;class#STGame#0" expanded="false" />
+            <element signature="method#SelectDealer#0;class#STGame#0" expanded="false" />
             <element signature="e#1478#1479#0" expanded="true" />
             <element signature="e#1513#1514#0" expanded="true" />
             <element signature="e#1588#1589#0" expanded="true" />
@@ -1051,6 +1047,7 @@
             <element signature="e#2942#2943#0" expanded="true" />
             <element signature="e#2973#2974#0" expanded="true" />
             <element signature="e#3005#3006#0" expanded="true" />
+            <element signature="e#3046#3047#0" expanded="true" />
             <element signature="e#3083#3084#0" expanded="true" />
             <element signature="e#3143#3144#0" expanded="true" />
             <element signature="e#3195#3196#0" expanded="true" />
@@ -1228,46 +1225,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="65" column="92" selection-start-line="65" selection-start-column="92" selection-end-line="65" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#Main#0" expanded="false" />
-            <element signature="method#getUserMenuChoice#0;class#Main#0" expanded="false" />
-            <element signature="method#showMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#showWelcome#0;class#Main#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/STGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
-          <folding>
-            <element signature="method#STGame#0;class#STGame#0" expanded="false" />
-            <element signature="e#1478#1479#0" expanded="true" />
-            <element signature="e#1513#1514#0" expanded="true" />
-            <element signature="e#1588#1589#0" expanded="true" />
-            <element signature="e#1636#1637#0" expanded="true" />
-            <element signature="method#InitialisePlayers#0;class#STGame#0" expanded="false" />
-            <element signature="e#2912#2913#0" expanded="true" />
-            <element signature="e#2942#2943#0" expanded="true" />
-            <element signature="e#2973#2974#0" expanded="true" />
-            <element signature="e#3005#3006#0" expanded="true" />
-            <element signature="e#3083#3084#0" expanded="true" />
-            <element signature="e#3143#3144#0" expanded="true" />
-            <element signature="e#3195#3196#0" expanded="true" />
-            <element signature="method#drawCardFromDeck#0;class#STGame#0" expanded="false" />
-            <element signature="method#compareCard#0;class#STGame#0" expanded="false" />
-            <element signature="e#5928#5929#0" expanded="true" />
-            <element signature="e#5955#5956#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/STPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1299,8 +1256,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/STDeck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="241" column="68" selection-start-line="241" selection-start-column="68" selection-end-line="241" selection-end-column="68" />
+        <state relative-caret-position="448">
+          <caret line="273" column="31" selection-start-line="273" selection-start-column="31" selection-end-line="273" selection-end-column="31" />
           <folding>
             <element signature="e#343#351#0" expanded="true" />
             <element signature="method#ShuffleTheDeck#0;class#STDeck#0" expanded="false" />
@@ -1366,6 +1323,47 @@
             <element signature="method#CardProperties57#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties58#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties59#0;class#STDeck#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/STGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="149" column="49" selection-start-line="149" selection-start-column="49" selection-end-line="149" selection-end-column="49" />
+          <folding>
+            <element signature="method#STGame#0;class#STGame#0" expanded="false" />
+            <element signature="method#SelectDealer#0;class#STGame#0" expanded="false" />
+            <element signature="e#1478#1479#0" expanded="true" />
+            <element signature="e#1513#1514#0" expanded="true" />
+            <element signature="e#1588#1589#0" expanded="true" />
+            <element signature="e#1636#1637#0" expanded="true" />
+            <element signature="method#InitialisePlayers#0;class#STGame#0" expanded="false" />
+            <element signature="e#2912#2913#0" expanded="true" />
+            <element signature="e#2942#2943#0" expanded="true" />
+            <element signature="e#2973#2974#0" expanded="true" />
+            <element signature="e#3005#3006#0" expanded="true" />
+            <element signature="e#3046#3047#0" expanded="true" />
+            <element signature="e#3083#3084#0" expanded="true" />
+            <element signature="e#3143#3144#0" expanded="true" />
+            <element signature="e#3195#3196#0" expanded="true" />
+            <element signature="method#drawCardFromDeck#0;class#STGame#0" expanded="false" />
+            <element signature="method#compareCard#0;class#STGame#0" expanded="false" />
+            <element signature="e#5928#5929#0" expanded="true" />
+            <element signature="e#5955#5956#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="71" column="35" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#Main#0" expanded="false" />
+            <element signature="method#getUserMenuChoice#0;class#Main#0" expanded="false" />
+            <element signature="method#showWelcome#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>

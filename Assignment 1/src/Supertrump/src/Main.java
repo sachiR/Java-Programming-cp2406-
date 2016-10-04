@@ -41,53 +41,53 @@ public class Main {
             boolean exitFlag = false;
             if (game.nextPlayerID == 0){
                 System.out.println("1.  Play a Card");
-                System.out.println("2.  Show all Card in my Hand");
+                System.out.println("2.  Exit Current Game");
                 System.out.println("3.  Show last played card");
-                System.out.println("3.  Draw a Card from the Deck");
-                System.out.println("4.  Exit Current Game");
+                System.out.println("4.  Draw a Card from the Deck");
+                System.out.println("5.  Show all Card in my Hand");
             } else{
                 System.out.println("1.  Play the Next players card");
+                System.out.println("2.  Exit Current Game");
+                System.out.println("3.  Show last played card");
             }
 
             int opt = getUserMenuChoice(1, 5);
 
             switch (opt) { //options in the menu
                 case 1:
+                    //play a card
                     game.playCard(game.nextPlayerID);
 
                     game.getDeck().printCardAndProperties(game.getLastPlayedCard(),game.getPlayCategory());
-                    System.out.println("-------------");
+                    System.out.println("----------------------------");
                     game.printNextPlayer();
                     //STCard card = game.compareCard(game.nextPlayerID,game.getLastPlayedCard(),game.comapareCategory());
                     break;
                 case 2:
-                    //ShowAllCardsInHand();
-                    for (STCard scard : game.getPlayers().get(0).getCardsInHand()){
-                        game.getDeck().printCardAndProperties(scard,game.getPlayCategory());
-                        System.out.println("");
-                    }
+                    //exit
+                    exitFlag = true;
                     break;
                 case 3:
+                    //show last player
                     game.getDeck().printCardAndProperties(game.getLastPlayedCard()); // .getLastPlayedCard(game.getLastPlayedCard());
                     break;
-                    /*
-                    if (lastCard != null){
-                        System.out.println(lastCard);
-                    }
-                    */
                 case 4:
+                    //Draw a Card from the Deck
                     int np = game.nextPlayerID;
                     int plid = game.getPlayers().get(np).getPlayerID();
 
                     STCard c =  game.drawCardFromDeck(plid);
                     if(c != null){
                         game.getDeck().printCardAndProperties(c,game.getPlayCategory());
-
                     }
                     System.out.println("");
                     break;
                 case 5:
-                    exitFlag = true;
+                    //Show all Card in my Hand"
+                    for (STCard scard : game.getPlayers().get(0).getCardsInHand()){
+                        game.getDeck().printCardAndProperties(scard,game.getPlayCategory());
+                        System.out.println("");
+                    }
                     break;
             }
             if (exitFlag) {
@@ -98,7 +98,7 @@ public class Main {
 
 
     private static int getNumOfPlayers() {
-        System.out.println("Enter the number of players... (3 to 5)");
+        System.out.println("Enter The Number Of Players... (3 to 5)");
         int a = getUserMenuChoice(3,5);
         return a;
     }
@@ -151,9 +151,9 @@ public class Main {
     }
     private static void showMenu() {
         //CLEAR SCREEN ===
-        System.out.println("Press 1 to start game"); // shows menu with 3 options
-        System.out.println("Press 2 to how to play the game");
-        System.out.println("Press 3 to quit game");
+        System.out.println("1.  Start Game"); // shows menu with 3 options
+        System.out.println("2.  How To Play");
+        System.out.println("3.  Exit Game");
     }
 
     private static String showWelcome() {
