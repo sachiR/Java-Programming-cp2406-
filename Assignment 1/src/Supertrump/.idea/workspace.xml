@@ -30,8 +30,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+            <state relative-caret-position="449">
+              <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#main#0;class#Main#0" expanded="false" />
@@ -46,24 +46,24 @@
       <file leaf-file-name="STGame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/STGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="127" column="52" selection-start-line="127" selection-start-column="52" selection-end-line="127" selection-end-column="52" />
+            <state relative-caret-position="261">
+              <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
               <folding>
                 <element signature="method#STGame#0;class#STGame#0" expanded="false" />
                 <element signature="method#SelectDealer#0;class#STGame#0" expanded="false" />
                 <element signature="method#GetNextPlayerID#0;class#STGame#0" expanded="false" />
-                <element signature="method#printNextPlayer#0;class#STGame#0" expanded="false" />
                 <element signature="method#changeToPlayerID#0;class#STGame#0" expanded="false" />
                 <element signature="method#DealCardsToEachPlayer#0;class#STGame#0" expanded="false" />
                 <element signature="method#InitialisePlayers#0;class#STGame#0" expanded="false" />
-                <element signature="e#2854#2855#0" expanded="true" />
-                <element signature="e#2884#2885#0" expanded="true" />
-                <element signature="e#2988#2989#0" expanded="true" />
-                <element signature="e#3025#3026#0" expanded="true" />
+                <element signature="e#2792#2793#0" expanded="true" />
+                <element signature="e#2822#2823#0" expanded="true" />
+                <element signature="e#2926#2927#0" expanded="true" />
+                <element signature="e#2963#2964#0" expanded="true" />
+                <element signature="method#playCard#0;class#STGame#0" expanded="false" />
                 <element signature="method#drawCardFromDeck#0;class#STGame#0" expanded="false" />
                 <element signature="method#compareCard#0;class#STGame#0" expanded="false" />
-                <element signature="e#4821#4822#0" expanded="true" />
-                <element signature="e#4848#4849#0" expanded="true" />
+                <element signature="e#4778#4779#0" expanded="true" />
+                <element signature="e#4805#4806#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -185,9 +185,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/STPlayer.java" />
         <option value="$PROJECT_DIR$/src/game/NextPlayerID.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/STCard.java" />
         <option value="$PROJECT_DIR$/src/STDeck.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/STGame.java" />
       </list>
     </option>
@@ -516,17 +516,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32649842" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37223974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35962147" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -588,18 +588,18 @@
             <element signature="method#STGame#0;class#STGame#0" expanded="false" />
             <element signature="method#SelectDealer#0;class#STGame#0" expanded="false" />
             <element signature="method#GetNextPlayerID#0;class#STGame#0" expanded="false" />
-            <element signature="method#printNextPlayer#0;class#STGame#0" expanded="false" />
             <element signature="method#changeToPlayerID#0;class#STGame#0" expanded="false" />
             <element signature="method#DealCardsToEachPlayer#0;class#STGame#0" expanded="false" />
             <element signature="method#InitialisePlayers#0;class#STGame#0" expanded="false" />
-            <element signature="e#2854#2855#0" expanded="true" />
-            <element signature="e#2884#2885#0" expanded="true" />
-            <element signature="e#2988#2989#0" expanded="true" />
-            <element signature="e#3025#3026#0" expanded="true" />
+            <element signature="e#2792#2793#0" expanded="true" />
+            <element signature="e#2822#2823#0" expanded="true" />
+            <element signature="e#2926#2927#0" expanded="true" />
+            <element signature="e#2963#2964#0" expanded="true" />
+            <element signature="method#playCard#0;class#STGame#0" expanded="false" />
             <element signature="method#drawCardFromDeck#0;class#STGame#0" expanded="false" />
             <element signature="method#compareCard#0;class#STGame#0" expanded="false" />
-            <element signature="e#4821#4822#0" expanded="true" />
-            <element signature="e#4848#4849#0" expanded="true" />
+            <element signature="e#4778#4779#0" expanded="true" />
+            <element signature="e#4805#4806#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -732,18 +732,18 @@
             <element signature="method#STGame#0;class#STGame#0" expanded="false" />
             <element signature="method#SelectDealer#0;class#STGame#0" expanded="false" />
             <element signature="method#GetNextPlayerID#0;class#STGame#0" expanded="false" />
-            <element signature="method#printNextPlayer#0;class#STGame#0" expanded="false" />
             <element signature="method#changeToPlayerID#0;class#STGame#0" expanded="false" />
             <element signature="method#DealCardsToEachPlayer#0;class#STGame#0" expanded="false" />
             <element signature="method#InitialisePlayers#0;class#STGame#0" expanded="false" />
-            <element signature="e#2854#2855#0" expanded="true" />
-            <element signature="e#2884#2885#0" expanded="true" />
-            <element signature="e#2988#2989#0" expanded="true" />
-            <element signature="e#3025#3026#0" expanded="true" />
+            <element signature="e#2792#2793#0" expanded="true" />
+            <element signature="e#2822#2823#0" expanded="true" />
+            <element signature="e#2926#2927#0" expanded="true" />
+            <element signature="e#2963#2964#0" expanded="true" />
+            <element signature="method#playCard#0;class#STGame#0" expanded="false" />
             <element signature="method#drawCardFromDeck#0;class#STGame#0" expanded="false" />
             <element signature="method#compareCard#0;class#STGame#0" expanded="false" />
-            <element signature="e#4821#4822#0" expanded="true" />
-            <element signature="e#4848#4849#0" expanded="true" />
+            <element signature="e#4778#4779#0" expanded="true" />
+            <element signature="e#4805#4806#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -982,18 +982,18 @@
             <element signature="method#STGame#0;class#STGame#0" expanded="false" />
             <element signature="method#SelectDealer#0;class#STGame#0" expanded="false" />
             <element signature="method#GetNextPlayerID#0;class#STGame#0" expanded="false" />
-            <element signature="method#printNextPlayer#0;class#STGame#0" expanded="false" />
             <element signature="method#changeToPlayerID#0;class#STGame#0" expanded="false" />
             <element signature="method#DealCardsToEachPlayer#0;class#STGame#0" expanded="false" />
             <element signature="method#InitialisePlayers#0;class#STGame#0" expanded="false" />
-            <element signature="e#2854#2855#0" expanded="true" />
-            <element signature="e#2884#2885#0" expanded="true" />
-            <element signature="e#2988#2989#0" expanded="true" />
-            <element signature="e#3025#3026#0" expanded="true" />
+            <element signature="e#2792#2793#0" expanded="true" />
+            <element signature="e#2822#2823#0" expanded="true" />
+            <element signature="e#2926#2927#0" expanded="true" />
+            <element signature="e#2963#2964#0" expanded="true" />
+            <element signature="method#playCard#0;class#STGame#0" expanded="false" />
             <element signature="method#drawCardFromDeck#0;class#STGame#0" expanded="false" />
             <element signature="method#compareCard#0;class#STGame#0" expanded="false" />
-            <element signature="e#4821#4822#0" expanded="true" />
-            <element signature="e#4848#4849#0" expanded="true" />
+            <element signature="e#4778#4779#0" expanded="true" />
+            <element signature="e#4805#4806#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1020,18 +1020,18 @@
             <element signature="method#STGame#0;class#STGame#0" expanded="false" />
             <element signature="method#SelectDealer#0;class#STGame#0" expanded="false" />
             <element signature="method#GetNextPlayerID#0;class#STGame#0" expanded="false" />
-            <element signature="method#printNextPlayer#0;class#STGame#0" expanded="false" />
             <element signature="method#changeToPlayerID#0;class#STGame#0" expanded="false" />
             <element signature="method#DealCardsToEachPlayer#0;class#STGame#0" expanded="false" />
             <element signature="method#InitialisePlayers#0;class#STGame#0" expanded="false" />
-            <element signature="e#2854#2855#0" expanded="true" />
-            <element signature="e#2884#2885#0" expanded="true" />
-            <element signature="e#2988#2989#0" expanded="true" />
-            <element signature="e#3025#3026#0" expanded="true" />
+            <element signature="e#2792#2793#0" expanded="true" />
+            <element signature="e#2822#2823#0" expanded="true" />
+            <element signature="e#2926#2927#0" expanded="true" />
+            <element signature="e#2963#2964#0" expanded="true" />
+            <element signature="method#playCard#0;class#STGame#0" expanded="false" />
             <element signature="method#drawCardFromDeck#0;class#STGame#0" expanded="false" />
             <element signature="method#compareCard#0;class#STGame#0" expanded="false" />
-            <element signature="e#4821#4822#0" expanded="true" />
-            <element signature="e#4848#4849#0" expanded="true" />
+            <element signature="e#4778#4779#0" expanded="true" />
+            <element signature="e#4805#4806#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1171,20 +1171,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#Main#0" expanded="false" />
-            <element signature="method#getUserMenuChoice#0;class#Main#0" expanded="false" />
-            <element signature="method#showMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#showWelcome#0;class#Main#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/STPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1291,26 +1277,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#Main#0" expanded="false" />
+            <element signature="method#getUserMenuChoice#0;class#Main#0" expanded="false" />
+            <element signature="method#showMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#showWelcome#0;class#Main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/STGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="127" column="52" selection-start-line="127" selection-start-column="52" selection-end-line="127" selection-end-column="52" />
+        <state relative-caret-position="261">
+          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
           <folding>
             <element signature="method#STGame#0;class#STGame#0" expanded="false" />
             <element signature="method#SelectDealer#0;class#STGame#0" expanded="false" />
             <element signature="method#GetNextPlayerID#0;class#STGame#0" expanded="false" />
-            <element signature="method#printNextPlayer#0;class#STGame#0" expanded="false" />
             <element signature="method#changeToPlayerID#0;class#STGame#0" expanded="false" />
             <element signature="method#DealCardsToEachPlayer#0;class#STGame#0" expanded="false" />
             <element signature="method#InitialisePlayers#0;class#STGame#0" expanded="false" />
-            <element signature="e#2854#2855#0" expanded="true" />
-            <element signature="e#2884#2885#0" expanded="true" />
-            <element signature="e#2988#2989#0" expanded="true" />
-            <element signature="e#3025#3026#0" expanded="true" />
+            <element signature="e#2792#2793#0" expanded="true" />
+            <element signature="e#2822#2823#0" expanded="true" />
+            <element signature="e#2926#2927#0" expanded="true" />
+            <element signature="e#2963#2964#0" expanded="true" />
+            <element signature="method#playCard#0;class#STGame#0" expanded="false" />
             <element signature="method#drawCardFromDeck#0;class#STGame#0" expanded="false" />
             <element signature="method#compareCard#0;class#STGame#0" expanded="false" />
-            <element signature="e#4821#4822#0" expanded="true" />
-            <element signature="e#4848#4849#0" expanded="true" />
+            <element signature="e#4778#4779#0" expanded="true" />
+            <element signature="e#4805#4806#0" expanded="true" />
           </folding>
         </state>
       </provider>

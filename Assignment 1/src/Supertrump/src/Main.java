@@ -39,15 +39,21 @@ public class Main {
 
         while (true) {
             boolean exitFlag = false;
-            System.out.println("1.  Play a Card");
-            System.out.println("2.  Show all Card in my Hand");
-            System.out.println("3.  Draw a Card from the Deck");
-            System.out.println("4.  Exit Current Game");
+            if (game.nextPlayerID == 0){
+                System.out.println("1.  Play a Card");
+                System.out.println("2.  Show all Card in my Hand");
+                System.out.println("3.  Draw a Card from the Deck");
+                System.out.println("4.  Exit Current Game");
+            } else{
+                System.out.println("1.  Play the Next players card");
+            }
+
             int opt = getUserMenuChoice(1, 4);
 
             switch (opt) { //options in the menu
                 case 1:
                     game.playCard(game.nextPlayerID);
+                    game.printNextPlayer();
                     STCard card = game.compareCard(game.nextPlayerID,game.getLastPlayedCard(),game.comapareCategory());
                     break;
                 case 2:

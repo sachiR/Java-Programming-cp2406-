@@ -28,6 +28,7 @@ public class STGame {
         this.dealerID = rnd.nextInt(numPlayers);
         //nextPlayerID = this.dealerID;
         nextPlayerID = GetNextPlayerID(this.dealerID);
+        System.out.println("\nDealer is "+this.dealerID);
         /*
         System.out.println("\nRandom dealer is "+this.dealerID);
         System.out.println("\nNext Player is "+this.nextPlayerID);
@@ -43,8 +44,7 @@ public class STGame {
         return p;
     }
     public void printNextPlayer(){
-        System.out.println("\nDealer is "+this.dealerID);
-        System.out.println("\nNext Player is "+this.nextPlayerID);
+        System.out.println("\nNext Player is "+nextPlayerID);
 
         System.out.println("--------------------------------");
     }
@@ -54,7 +54,6 @@ public class STGame {
         if(dealerID >= numPlayers){
             dealerID = 0;
         }
-        System.out.println("Next player is "+ dealerID);
     }
 
     public void DealCardsToEachPlayer(int numberOfCards){
@@ -122,7 +121,7 @@ public class STGame {
         HashMap<String, List<String>> cp = new HashMap<>();
         if (getLastPlayedCard() == null ){
             for (STCard card: this.getPlayers().get(nextPlayerID).getCardsInHand()) {
-                if(card.getCardType().equalsIgnoreCase("Play")){
+                if(card.getCardType().equalsIgnoreCase("Play")&&(nextPlayerID!=0)){
                     System.out.println("CardID\t\t: "+card.getCardID());
                     System.out.println("CardTitle\t: "+card.getCardTitle());
                     System.out.println("CardType\t: "+card.getCardType());
