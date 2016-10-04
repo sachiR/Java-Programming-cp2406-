@@ -34,7 +34,7 @@ public class STDeck {
             LoadCardProperties(i);
         }
         for (int i = 0; i < 6; i++) {
-            STCard c = new STCard(i, "Trump", "Trunp Card " + i);
+            STCard c = new STCard(i, "Trump", "Trunp Card " + (i+54));
             LCards.add(c);
             LoadTrumpCardProperties(i+NUM_OF_PLAYER_CARDS);
         }
@@ -1766,7 +1766,7 @@ public class STDeck {
     }
     //6 trump cards
     private HashMap<String, List<String>> CardProperties54(){
-        LCards.get(1).setCardTitle("The Miner");
+        LCards.get(54).setCardTitle("The Miner");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1778,7 +1778,7 @@ public class STDeck {
 
     }
     private HashMap<String, List<String>> CardProperties55(){
-        LCards.get(1).setCardTitle("The Petrologist");
+        LCards.get(55).setCardTitle("The Petrologist");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1789,7 +1789,7 @@ public class STDeck {
         return  dct;
     }
     private HashMap<String, List<String>> CardProperties56(){
-        LCards.get(1).setCardTitle("The Gemmologist");
+        LCards.get(56).setCardTitle("The Gemmologist");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1800,7 +1800,7 @@ public class STDeck {
         return  dct;
     }
     private HashMap<String, List<String>> CardProperties57(){
-        LCards.get(1).setCardTitle("The Mineralogist");
+        LCards.get(57).setCardTitle("The Mineralogist");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1811,7 +1811,7 @@ public class STDeck {
         return  dct;
     }
     private HashMap<String, List<String>> CardProperties58(){
-        LCards.get(1).setCardTitle("The Geophysicist");
+        LCards.get(58).setCardTitle("The Geophysicist");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 
@@ -1822,7 +1822,7 @@ public class STDeck {
         return  dct;
     }
     private HashMap<String, List<String>> CardProperties59(){
-        LCards.get(1).setCardTitle("The Geologist");
+        LCards.get(59).setCardTitle("The Geologist");
 
         HashMap<String,List<String>> dct =  new HashMap<>();
 

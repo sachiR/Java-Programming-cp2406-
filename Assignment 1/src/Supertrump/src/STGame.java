@@ -123,14 +123,17 @@ public class STGame {
         if (getLastPlayedCard() == null ){
             for (STCard card: this.getPlayers().get(nextPlayerID).getCardsInHand()) {
                 if(card.getCardType().equalsIgnoreCase("Play")){
-                    System.out.println(card.getCardID());
-                    System.out.println(card.getCardTitle());
+                    System.out.println("CardID\t\t: "+card.getCardID());
+                    System.out.println("CardTitle\t: "+card.getCardTitle());
+                    System.out.println("CardType\t: "+card.getCardType());
+                    System.out.println();
                     cp = card.getCardProperties();
 
                     //--- Generate Random number to find playig Category 0 - 5
                     int rnd = new Random().nextInt(5);
                     String st = STCard.enumPlayingCategory.values()[rnd].toString();
                     System.out.println(cp.containsKey(st));
+                    System.out.println("---------------------------");
                     return card;
                 }
             }
