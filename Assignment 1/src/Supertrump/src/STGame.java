@@ -1,14 +1,11 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 
 public class STGame {
     private STCard.enumPlayingCategory playCategory;
     private int numPlayers;
     private int dealerID;
-    public int nextPlayerID;
+    private int nextPlayerID;
     private int lastPlayerID = -1;
     private List<STPlayer> players;
     private STDeck deck;
@@ -24,12 +21,19 @@ public class STGame {
         SelectDealer();
     }
 
+    public int getNextPlayerID(){
+        return this.nextPlayerID;
+    }
+    public void setNextPlayerID(int value){
+        this.nextPlayerID = value;
+    }
+
     private void SelectDealer() {
         Random rnd = new Random();
         this.dealerID = rnd.nextInt(numPlayers);
         //nextPlayerID = this.dealerID;
-        nextPlayerID = GetNextPlayerID(this.dealerID);
-        System.out.println("\nDealer is "+this.dealerID);
+        setNextPlayerID(calculateNextPlayerID(dealerID));
+
         /*
         System.out.println("\nRandom dealer is "+this.dealerID);
         System.out.println("\nNext Player is "+this.nextPlayerID);
@@ -37,7 +41,10 @@ public class STGame {
         System.out.println("--------------------------------");
         */
     }
-    private int GetNextPlayerID(int p) {
+    public void printDealer(){
+        System.out.println("\nDealer is "+this.dealerID);
+    }
+    private int calculateNextPlayerID(int p) {
         p++;
         if(p >= numPlayers) {
             p = 0;
@@ -45,7 +52,7 @@ public class STGame {
         return p;
     }
     public void printNextPlayer(){
-        System.out.println("\nNext Player is "+nextPlayerID);
+        System.out.println("\nNext Player is "+ this.getNextPlayerID());
         System.out.println("--------------------------------");
     }
 
@@ -57,7 +64,7 @@ public class STGame {
     }
 
     public void DealCardsToEachPlayer(int numberOfCards){
-        int p = GetNextPlayerID(getDealerID());
+        int p =  calculateNextPlayerID(getDealerID());
         for(int j = 0; j < numPlayers; j++)
         {
             List<STCard> c = new ArrayList<STCard>();  // arList<STCard>();
@@ -67,7 +74,7 @@ public class STGame {
                 this.deck.getCards().remove(i);     // .RemoveAt(i);
             }
             this.players.get(p).setCardsInHand(c);      // .CardsInHand = c;
-            p = GetNextPlayerID(p);
+            p = calculateNextPlayerID(p);
         }
     }
 
@@ -117,14 +124,15 @@ public class STGame {
         this.lastPlayedCard = lastPlayedCard;
     }
 
-    public STCard playCard(int nextPlayerID) {
+    public STCard playCard(int id) {
+        //this id is Player ID
         HashMap<String, List<String>> cp = new HashMap<>();
         STCard playCard = new STCard();
         int selectedCardID = 0;  //, j;
 
         if (getLastPlayedCard() == null ) {
             //j=0;
-            for (STCard card : this.getPlayers().get(nextPlayerID).getCardsInHand()) {
+            for (STCard card : this.getPlayers().get(id).getCardsInHand()) {
                 if (card.getCardType().equalsIgnoreCase("Play")) {
                     /*
                     System.out.println("CardID\t\t: " + card.getCardID());
@@ -154,7 +162,7 @@ public class STGame {
             // return
             //}
 
-            if(nextPlayerID == 0 ) {
+            if(id == 0 ) {
                 //Manually Select a Card from the List
                 //playCard = selected card;
             } else {
@@ -162,10 +170,11 @@ public class STGame {
                 //playCard = selected card;
             }
         }
-        this.getPlayers().get(nextPlayerID).getCardsInHand().remove(selectedCardID);
+        this.getPlayers().get(id).getCardsInHand().remove(selectedCardID);
         setLastPlayedCard(playCard);
 
-        nextPlayerID = GetNextPlayerID(nextPlayerID);
+        setNextPlayerID(calculateNextPlayerID(id));
+        //nextPlayerID = nextPlayerID(id);
 
         return playCard;
     }

@@ -36,10 +36,11 @@ public class Main {
         game.getDeck().ShuffleTheDeck();
         game.DealCardsToEachPlayer(8);
         game.printNextPlayer();
+        game.printDealer();
 
         while (true) {
             boolean exitFlag = false;
-            if (game.nextPlayerID == 0){
+            if (game.getNextPlayerID() == 0){
                 System.out.println("1.  Play a Card");
                 System.out.println("2.  Exit Current Game");
                 System.out.println("3.  Show last played card");
@@ -56,7 +57,8 @@ public class Main {
             switch (opt) { //options in the menu
                 case 1:
                     //play a card
-                    game.playCard(game.nextPlayerID);
+
+                    game.playCard(game.getNextPlayerID());
 
                     game.getDeck().printCardAndProperties(game.getLastPlayedCard(),game.getPlayCategory());
                     System.out.println("----------------------------");
@@ -73,7 +75,7 @@ public class Main {
                     break;
                 case 4:
                     //Draw a Card from the Deck
-                    int np = game.nextPlayerID;
+                    int np = game.getNextPlayerID();
                     int plid = game.getPlayers().get(np).getPlayerID();
 
                     STCard c =  game.drawCardFromDeck(plid);
