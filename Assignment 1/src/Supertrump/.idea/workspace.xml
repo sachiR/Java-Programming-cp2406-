@@ -72,13 +72,15 @@
       <file leaf-file-name="STDeck.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/STDeck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="303" column="72" selection-start-line="303" selection-start-column="72" selection-end-line="303" selection-end-column="72" />
+            <state relative-caret-position="448">
+              <caret line="1840" column="0" selection-start-line="1840" selection-start-column="0" selection-end-line="1840" selection-end-column="0" />
               <folding>
                 <element signature="method#ShuffleTheDeck#0;class#STDeck#0" expanded="false" />
                 <element signature="method#STDeck#0;class#STDeck#0" expanded="false" />
                 <element signature="method#LoadTrumpCardProperties#0;class#STDeck#0" expanded="false" />
                 <element signature="method#LoadCardProperties#0;class#STDeck#0" expanded="false" />
+                <element signature="method#CardProperties0#0;class#STDeck#0" expanded="false" />
+                <element signature="method#CardProperties1#0;class#STDeck#0" expanded="false" />
                 <element signature="method#CardProperties2#0;class#STDeck#0" expanded="false" />
                 <element signature="method#CardProperties3#0;class#STDeck#0" expanded="false" />
                 <element signature="method#CardProperties4#0;class#STDeck#0" expanded="false" />
@@ -99,7 +101,6 @@
                 <element signature="method#CardProperties19#0;class#STDeck#0" expanded="false" />
                 <element signature="method#CardProperties20#0;class#STDeck#0" expanded="false" />
                 <element signature="method#CardProperties21#0;class#STDeck#0" expanded="false" />
-                <element signature="method#CardProperties22#0;class#STDeck#0" expanded="false" />
                 <element signature="method#CardProperties23#0;class#STDeck#0" expanded="false" />
                 <element signature="method#CardProperties24#0;class#STDeck#0" expanded="false" />
                 <element signature="method#CardProperties25#0;class#STDeck#0" expanded="false" />
@@ -203,10 +204,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="-7" />
+    <option name="width" value="697" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -525,7 +525,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-7" y="0" width="697" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -580,8 +580,14 @@
           <properties />
           <option name="timeStamp" value="47" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/STDeck.java</url>
+          <line>626</line>
+          <properties />
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="48" />
+      <option name="time" value="51" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -637,6 +643,8 @@
             <element signature="method#STDeck#0;class#STDeck#0" expanded="false" />
             <element signature="method#LoadTrumpCardProperties#0;class#STDeck#0" expanded="false" />
             <element signature="method#LoadCardProperties#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties0#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties1#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties2#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties3#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties4#0;class#STDeck#0" expanded="false" />
@@ -657,7 +665,6 @@
             <element signature="method#CardProperties19#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties20#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties21#0;class#STDeck#0" expanded="false" />
-            <element signature="method#CardProperties22#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties23#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties24#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties25#0;class#STDeck#0" expanded="false" />
@@ -776,6 +783,8 @@
             <element signature="method#STDeck#0;class#STDeck#0" expanded="false" />
             <element signature="method#LoadTrumpCardProperties#0;class#STDeck#0" expanded="false" />
             <element signature="method#LoadCardProperties#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties0#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties1#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties2#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties3#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties4#0;class#STDeck#0" expanded="false" />
@@ -796,7 +805,6 @@
             <element signature="method#CardProperties19#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties20#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties21#0;class#STDeck#0" expanded="false" />
-            <element signature="method#CardProperties22#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties23#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties24#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties25#0;class#STDeck#0" expanded="false" />
@@ -903,6 +911,8 @@
             <element signature="method#STDeck#0;class#STDeck#0" expanded="false" />
             <element signature="method#LoadTrumpCardProperties#0;class#STDeck#0" expanded="false" />
             <element signature="method#LoadCardProperties#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties0#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties1#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties2#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties3#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties4#0;class#STDeck#0" expanded="false" />
@@ -923,7 +933,6 @@
             <element signature="method#CardProperties19#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties20#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties21#0;class#STDeck#0" expanded="false" />
-            <element signature="method#CardProperties22#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties23#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties24#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties25#0;class#STDeck#0" expanded="false" />
@@ -1084,6 +1093,8 @@
             <element signature="method#STDeck#0;class#STDeck#0" expanded="false" />
             <element signature="method#LoadTrumpCardProperties#0;class#STDeck#0" expanded="false" />
             <element signature="method#LoadCardProperties#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties0#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties1#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties2#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties3#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties4#0;class#STDeck#0" expanded="false" />
@@ -1104,7 +1115,6 @@
             <element signature="method#CardProperties19#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties20#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties21#0;class#STDeck#0" expanded="false" />
-            <element signature="method#CardProperties22#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties23#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties24#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties25#0;class#STDeck#0" expanded="false" />
@@ -1245,13 +1255,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/STDeck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="303" column="72" selection-start-line="303" selection-start-column="72" selection-end-line="303" selection-end-column="72" />
+        <state relative-caret-position="448">
+          <caret line="1840" column="0" selection-start-line="1840" selection-start-column="0" selection-end-line="1840" selection-end-column="0" />
           <folding>
             <element signature="method#ShuffleTheDeck#0;class#STDeck#0" expanded="false" />
             <element signature="method#STDeck#0;class#STDeck#0" expanded="false" />
             <element signature="method#LoadTrumpCardProperties#0;class#STDeck#0" expanded="false" />
             <element signature="method#LoadCardProperties#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties0#0;class#STDeck#0" expanded="false" />
+            <element signature="method#CardProperties1#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties2#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties3#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties4#0;class#STDeck#0" expanded="false" />
@@ -1272,7 +1284,6 @@
             <element signature="method#CardProperties19#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties20#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties21#0;class#STDeck#0" expanded="false" />
-            <element signature="method#CardProperties22#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties23#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties24#0;class#STDeck#0" expanded="false" />
             <element signature="method#CardProperties25#0;class#STDeck#0" expanded="false" />

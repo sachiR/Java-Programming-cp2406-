@@ -305,20 +305,20 @@ public class STDeck {
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("2.6-2.8");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("1 perfect, 1 good");
         //lst3.add("");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("very high");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("moderate");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
     }
@@ -329,24 +329,24 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("6-6.5");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("2.5-2.6");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("1 perfect, 1 good");
         //lst3.add("");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("high");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("moderate");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -358,23 +358,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("2.5-3");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("2.7-3.3");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("1 perfect");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("moderate");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("low");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -386,23 +386,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("2.5-3");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("2.8-2.9");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("1 perfect");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("moderate");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("moderate");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -414,23 +414,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("5-6");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("3.0-3.5");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("2 good");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("moderate");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("trivial");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -442,23 +442,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("5-6");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("3.0-3.5");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("2 good");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("low");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("low");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -470,23 +470,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("6");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("3.0-3.2");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("2 good");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("low");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("trivial");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -498,23 +498,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("6.5-7");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("3.2-4.4");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("2 poor");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("high");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("low");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -525,23 +525,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("6-7.5");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("3.5-4.3");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("none");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("moderate");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("moderate");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
     }
@@ -551,23 +551,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("5-5.5");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("3.4-3.6");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("3 good");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("low");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("low");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
     }
@@ -577,23 +577,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("7.5");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("4.6-4.7");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("2 poor");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("trace");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("moderate");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
     }
@@ -603,23 +603,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("5.5-6.5");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("3.2-3.6");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("2 good");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("high");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("trivial");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
     }
@@ -629,23 +629,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("5-6");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("3.2-3.9");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("2 good");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("high");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("trivial");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
     }
@@ -655,23 +655,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("2-3");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("2.6-3.3");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("1 perfect");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("moderate");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("low");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
     }
@@ -681,23 +681,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("3.5-4");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("2.6");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("1 perfect");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("low");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("low");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
     }
@@ -707,23 +707,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("1");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("2.6-2.8");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("1 perfect");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("low");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("moderate");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
     }
@@ -734,23 +734,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("1.5-2.5");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("2.6-2.7");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("1 perfect");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("moderate");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("high");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -762,23 +762,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("6.5-7");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("3.15");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("2 good");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("low");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("moderate");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -790,23 +790,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("5.5-7");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("3.5-3.7");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("1 perfect, 1 good");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("trace");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("moderate");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -818,23 +818,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("6.5-7.5");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("3.25");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("1 perfect, 1 good");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("low");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("low");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -846,23 +846,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("7");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("3.7-3.8");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("1 good");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("trace");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("low");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -874,23 +874,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("6 - 6.5");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("3.2 - 3.5");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("1 perfect");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("moderate");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("trivial");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -902,23 +902,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("7 - 7.5");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("3.0 - 3.2");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("2 poor");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("trace");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("moderate");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -930,23 +930,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("8");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("3.5 - 3.6");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("1 perfect");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("ultratrace");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("low");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -958,23 +958,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("7.5 - 8");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("2.6 - 2.9");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("1 poor");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("trace");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("moderate");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -986,23 +986,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("6 - 6.5");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("5");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("2 poor");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("low");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("moderate");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -1014,23 +1014,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("3.5 4.5");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("4.6");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("none");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("low");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("moderate");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -1042,23 +1042,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("3.5 - 4");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("4.1 - 4.3");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("2 poor");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("low");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("very high");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -1070,23 +1070,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("2.5");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("7.5 - 7.6");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("3 perfect");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("trace");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("high");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -1098,23 +1098,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("3.5 - 4");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("3.9 - 4.1");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("6 perfect");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("trace");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("high");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -1126,23 +1126,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("1 - 1.5");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("4.7");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("1 perfect");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("trace");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("high");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -1154,23 +1154,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("2.5 - 3");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("19.3");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("none");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("ultratrace");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("I'm rich!");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -1182,23 +1182,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("10");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("3.5");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("4 perfect");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("ultratrace");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("I'm rich!");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -1210,23 +1210,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("1 - 2");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("2.2");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("1 perfect");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("trace");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("moderate");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -1238,23 +1238,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("2.5");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("2.2");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("3 perfect");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("trace");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("moderate");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -1266,23 +1266,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("4");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("3.2");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("4 perfect");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("trace");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("moderate");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -1294,23 +1294,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("2");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("2.3");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("1 perfect, 2 good");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("trace");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("high");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -1322,23 +1322,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("3 - 3.5");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("4.5");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("2 perfect, 1 good");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("trace");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("moderate");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -1350,23 +1350,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("5");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("3.1 - 3.2");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("2 poor");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("low");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("high");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -1378,23 +1378,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("5");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("5.0 - 5.3");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("1 good, 1 poor");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("trace");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("moderate");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -1406,23 +1406,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("3");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("2.7");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("3 perfect");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("moderate");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("high");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -1434,23 +1434,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("3.5 - 4");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("2.9");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("3 perfect");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("low");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("low");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -1462,23 +1462,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("4");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("3.0");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("3 perfect");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("low");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("moderate");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -1490,23 +1490,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("4 - 4.5");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("4");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("3 perfect");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("trace");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("moderate");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -1518,23 +1518,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("5.5 - 6");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("5.2");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("none");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("moderate");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("very high");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -1546,23 +1546,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("5 - 6");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("5.3");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("none");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("trace");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("high");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -1574,23 +1574,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("5.5");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("4.5 - 5.1");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("none");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("low");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("high");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -1602,23 +1602,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("5 - 6");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("4.7 - 4.8");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("none");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("low");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("moderate");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -1630,23 +1630,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("6 - 6.5");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("4.3");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("2 good");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("low");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("high");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -1658,23 +1658,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("9");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("4.0");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("none");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("trace");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("moderate");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -1686,23 +1686,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("6 - 7");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("6.9 - 7.1");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("1 good, 1 poor");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("trace");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("high");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
@@ -1714,23 +1714,24 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("2.5 - 3.5");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("2.4");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("1 perfect");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("low");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("high");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
+
 
         return  dct;
 
@@ -1742,23 +1743,23 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("5 - 5.5");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("4.3");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("1 perfect, 1 good");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("moderate");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("moderate");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
 
