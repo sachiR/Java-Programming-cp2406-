@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
 
@@ -42,11 +43,12 @@ public class STGame {
         return p;
     }
     public void printNextPlayer(){
-        System.out.println("\n Dealer is "+this.dealerID);
+        System.out.println("\nDealer is "+this.dealerID);
         System.out.println("\nNext Player is "+this.nextPlayerID);
 
         System.out.println("--------------------------------");
     }
+
     private void changeToPlayerID(int dealerID) {
         dealerID++;
         if(dealerID >= numPlayers){
@@ -69,8 +71,6 @@ public class STGame {
             p = GetNextPlayerID(p);
         }
     }
-
-
 
     private List<STPlayer> InitialisePlayers() {
         List<STPlayer> players = new ArrayList<STPlayer>();
@@ -118,11 +118,25 @@ public class STGame {
         this.lastPlayedCard = lastPlayedCard;
     }
 
-    public static STCard playCard() {
+    public STCard playCard(int nextPlayerID) {
+        HashMap<String, List<String>> cp = new HashMap<>();
+        if (getLastPlayedCard() == null ){
+            for (STCard card: this.getPlayers().get(nextPlayerID).getCardsInHand()) {
+                if(card.getCardType().equalsIgnoreCase("Play")){
+                    System.out.println(card.getCardID());
+                    System.out.println(card.getCardTitle());
+                    cp = card.getCardProperties();
 
+                    //--- Generate Random number to find playig Category 0 - 5
+                    int rnd = new Random().nextInt(5);
+                    String st = STCard.enumPlayingCategory.values()[rnd].toString();
+                    System.out.println(cp.containsKey(st));
+                    return card;
+                }
+            }
+        }
         return null;
     }
-    
 
     public STCard drawCardFromDeck(int playerID) {
         STCard c= new STCard();
@@ -138,10 +152,9 @@ public class STGame {
         STCard c = new STCard();
     //todo: compare the given card to players hand with the given category adn if found return a card other wise pass
         return c;
-
     }
 
-    public String comapareCateegory() {
+    public String comapareCategory() {
         return null;
     }
 }

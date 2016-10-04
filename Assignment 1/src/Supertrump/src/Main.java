@@ -47,8 +47,8 @@ public class Main {
 
             switch (opt) { //options in the menu
                 case 1:
-                    game.playCard();
-                    STCard card = game.compareCard(game.nextPlayerID,game.getLastPlayedCard(),game.comapareCateegory());
+                    game.playCard(game.nextPlayerID);
+                    STCard card = game.compareCard(game.nextPlayerID,game.getLastPlayedCard(),game.comapareCategory());
                     break;
                 case 2:
                     //ShowAllCardsInHand();

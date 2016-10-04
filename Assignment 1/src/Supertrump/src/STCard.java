@@ -1,7 +1,17 @@
 import java.util.HashMap;
 import java.util.List;
 
+
 public class STCard {
+
+    public enum enumPlayingCategory{
+        hardness,
+        specific_gravity,
+        cleavage,
+        Crustal_Abundance,
+        Economic_Value
+    }
+
     private int _cardID;
     private String _cardType;
     private String _cardTitle;

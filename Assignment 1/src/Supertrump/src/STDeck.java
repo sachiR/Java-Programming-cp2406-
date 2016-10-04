@@ -271,24 +271,24 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("7");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("2.65");
-        dct.put("specific_gravity",lst2);
+        dct.put(STCard.enumPlayingCategory.values()[1].toString(),lst2);
 
         List<String> lst3 = new ArrayList<>();
         lst3.add("poor/");
         lst3.add("none");
-        dct.put("cleavage",lst3);
+        dct.put(STCard.enumPlayingCategory.values()[2].toString(),lst3);
 
         List<String> lst4 = new ArrayList<>();
         lst4.add("high");
-        dct.put("Crustal Abundance",lst4);
+        dct.put(STCard.enumPlayingCategory.values()[3].toString(),lst4);
 
         List<String> lst5 = new ArrayList<>();
         lst5.add("moderate");
-        dct.put("Economic Value",lst5);
+        dct.put(STCard.enumPlayingCategory.values()[4].toString(),lst5);
 
         return  dct;
         //this.LCards.get(0).setCardProperties(dct);
@@ -301,7 +301,7 @@ public class STDeck {
 
         List<String> lst1 = new ArrayList<>();
         lst1.add("6-6.5");
-        dct.put("hardness",lst1);
+        dct.put(STCard.enumPlayingCategory.values()[0].toString(),lst1);
 
         List<String> lst2 = new ArrayList<>();
         lst2.add("2.6-2.8");
