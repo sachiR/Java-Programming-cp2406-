@@ -1,8 +1,12 @@
 import java.util.*;
+import java.util.concurrent.SynchronousQueue;
 
 
 public class STGame {
     private STCard.enumPlayingCategory playCategory;
+
+    public static int playingCategory;
+
     private int numPlayers;
     private int dealerID;
     private int nextPlayerID;
@@ -10,9 +14,7 @@ public class STGame {
     private List<STPlayer> players;
     private STDeck deck;
 
-
     private STCard lastPlayedCard;
-
 
     public STGame(int numOfPlayers, STDeck deck) {
         this.numPlayers = numOfPlayers;
@@ -126,7 +128,12 @@ public class STGame {
 
     public STCard playCard(int id) {
         //this id is Player ID
-        HashMap<String, List<String>> cp = new HashMap<>();
+        //HashMap<String, List<String>> cp = new HashMap<>();
+        //HashMap<Integer , STCard> plaiedCard = new HashMap<>();
+
+        //Map<String, Objects> tt = new Map<>();
+        List<Object> plaiedCard =  new ArrayList<>();
+
         STCard playCard = new STCard();
         int selectedCardID = 0;  //, j;
 
@@ -145,15 +152,29 @@ public class STGame {
                     //--- Generate Random number to find playig Category 0 - 5
                     int rnd = new Random().nextInt(5);
                     String st = STCard.enumPlayingCategory.values()[rnd].toString();
+                    playingCategory = rnd;
                     this.setPlayCategory(STCard.enumPlayingCategory.values()[rnd]);
                     //System.out.println(cp.containsKey(st));
                     //System.out.println("---------------------------");
+                    //playCard = card;
+
+                    //plaiedCard.add(selectedCardID);
+                    //plaiedCard.add(card);
+
                     playCard = card;
+
+                    //plaiedCard.put(selectedCardID, card);
                     break;
                 }
                 selectedCardID++;
             }
         } else {
+            plaiedCard = comapareCategory();
+            if(plaiedCard.size()==0){
+                playCard = (STCard)plaiedCard.get(1);
+                selectedCardID = (int)plaiedCard.get(0);
+            }
+
             //Compare played card with cards in hand
             //Get the List of all possibles cards
             //if(Possible List == 0){
@@ -162,6 +183,7 @@ public class STGame {
             // return
             //}
 
+            /*  ========= IF OPERATOR IS PLAYING============
             if(id == 0 ) {
                 //Manually Select a Card from the List
                 //playCard = selected card;
@@ -169,11 +191,19 @@ public class STGame {
                 //Select Random card from the possible list
                 //playCard = selected card;
             }
+            */
+
         }
-        this.getPlayers().get(id).getCardsInHand().remove(selectedCardID);
-        setLastPlayedCard(playCard);
+
+        if(plaiedCard != null){
+            this.getPlayers().get(id).getCardsInHand().remove(selectedCardID);
+            setLastPlayedCard(playCard);
+        } else {
+            getPlayers().get(getNextPlayerID()).getCardsInHand().add(drawCardFromDeck(getNextPlayerID()));
+        }
 
         setNextPlayerID(calculateNextPlayerID(id));
+
         //nextPlayerID = nextPlayerID(id);
 
         return playCard;
@@ -191,12 +221,93 @@ public class STGame {
 
     public STCard compareCard(int playerID,STCard card,String compareCategory) {
         STCard c = new STCard();
-    //todo: compare the given card to players hand with the given category adn if found return a card other wise pass
+        //todo: compare the given card to players hand with the given category adn if found return a card other wise pass
         return c;
     }
 
-    public String comapareCategory() {
-        return null;
+    public List<Object> comapareCategory() {
+
+
+        //STCard c = new STCard();
+        List<Object> matchingCard =  new ArrayList<>();
+
+
+
+        /*
+        HashMap<Integer,String> h = new HashMap<>();
+        int cat = this.getPlayCategory().ordinal();
+        */
+        String category = this.getPlayCategory().toString();
+        double chkval = Double.parseDouble(this.getLastPlayedCard().getPlayCategoryValue(this.getPlayCategory().toString()));
+        double temp = -1;
+
+
+        System.out.println("Playing Category Type  : " + category);
+        System.out.println("  Value =====          : " + chkval);
+
+        for(int rank = 0 ; rank < this.getPlayers().get(getNextPlayerID()).getCardsInHand().size(); rank++ ){
+            try {
+                System.out.println("----Playing Category Type  : " + this.getPlayCategory());
+                temp = Double.parseDouble(this.getPlayers().get(getNextPlayerID()).getCardsInHand().get(rank).getPlayCategoryValue(this.getPlayCategory().toString()));
+                System.out.println("  Value =====          : " + temp);
+                if( temp > chkval){
+                    matchingCard.add(rank);
+                    matchingCard.add(this.getPlayers().get(getNextPlayerID()).getCardsInHand().get(rank));
+                    break;
+                }
+            }
+            catch (Exception ex){
+            }
+        }
+
+        /*
+        System.out.println("  Value                : " + this.getLastPlayedCard().getCardProperties().get(this.getPlayCategory().toString()).get(0));
+        System.out.println("  hardness          : " + this.getLastPlayedCard().getCardProperties().get("hardness").get(0));
+        System.out.println("  specific_gravity  : " + this.getLastPlayedCard().getCardProperties().get("specific_gravity").get(0));
+        System.out.println("  cleavage          : " + this.getLastPlayedCard().getCardProperties().get("cleavage").get(0));
+        System.out.println("  Crustal_Abundance : " + this.getLastPlayedCard().getCardProperties().get("Crustal_Abundance").get(0));
+        System.out.println("  Economic_Value    : " + this.getLastPlayedCard().getCardProperties().get("Economic_Value").get(0));
+
+        System.out.println("  hardness          : " + this.getLastPlayedCard().getHardness());
+        System.out.println("  specific_gravity  : " + this.getLastPlayedCard().getSpecificGravity());
+        System.out.println("  cleavage          : " + this.getLastPlayedCard().getCleavage());
+        System.out.println("  Crustal_Abundance : " + this.getLastPlayedCard().getCrustalAbundance());
+        System.out.println("  Economic_Value    : " + this.getLastPlayedCard().getEconomicValue());
+        */
+
+
+        /*
+        System.out.println("Playing Category Value : " + this.getLastPlayedCard().getCleavage());
+        STCard lastcard = getLastPlayedCard()
+
+        switch (cat){
+            case 0:     //hardness
+                break;
+            case 1:     //specific_gravity
+                break;
+            case 2:     //cleavage
+                h = c.getCleavage();
+                break;
+            case 3:     //Crustal_Abundance
+                h = c.getCrustalAbundance();
+                break;
+            case 4:     //Economic_Value
+                h = c.getEconomicValue();
+                break;
+        }
+
+
+        if(cat>1){
+            for (int i: h.keySet())
+            {
+                System.out.println(i);
+                System.out.println(h.get(i));
+                for(int j=0; j<)
+            }
+        }
+        */
+        //System.out.println();
+        return matchingCard;
     }
 
 
